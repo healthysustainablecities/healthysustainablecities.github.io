@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Global Healthy and Sustainable City Indicators"
+title: "Global Healthy & Sustainable City Indicators"
 subtitle: "FAQ"
 description: >-
-  An open-source tool for calculating spatial indicators for healthy, sustainable cities worldwide using open or custom data.
+  An open-source tool for calculating spatial indicators for healthy, sustainable cities worldwide using open or custom data.  This tool has been created to support the 1000 Cities Challenge of the Global Observatory of Healthy and Sustinable Cities (https://healthysustainablecities.org).
 keywords: accessibility urban-planning health transport public-health city city-government transportation-network urban public-transport urban-design
-author: Global Healthy and Sustainable City Indicators Collaboration
+author: GHSCIC
 language: en
 timezone: 'Australia/Melbourne'
 
