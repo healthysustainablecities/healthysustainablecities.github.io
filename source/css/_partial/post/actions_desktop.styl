@@ -64,7 +64,7 @@
     color: $color-accent-1
 
   #menu
-    display: none
+    display: inline
     margin-right: 2rem
 
   #nav
@@ -127,20 +127,19 @@
     max-width: 20em
     max-height: calc(95vh - 7rem)
     text-align: right
+    background: rgba(255,255,255,0.8)
 
     a:hover
       color: $color-link
 
     .toc-level-1 > .toc-link
-      display: none
+      color: $color-accent-1
+      font-size: 0.8rem
+      font-weight: bold
 
     .toc-level-2
       color: $color-text
       font-size: .8rem
-
-      &:before
-        color: $color-accent-1
-        content: "#"
 
     .toc-level-3
       color: $color-meta
@@ -160,23 +159,6 @@
       display: none
 
 // smartphone + phapblet
-@media screen and (max-width: 500px)
-  #header-post
-    display: none
-
-@media screen and (max-width: 900px)
-  #header-post
-    #menu-icon
-      display: none
-
-    #actions
-      display: none
-
-@media screen and (max-width: 1199px)
-  #header-post
-    #toc
-      display: none
-
 @media screen and (min-width: 900px)
   #header-post
     #menu-icon-tablet
