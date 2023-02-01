@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="2023 draft in progress Background primerAimThe Global Healthy and Sustinable City Indicators (global-indicators) software can be used to analyse and report on health related spatial indicators of urba">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Global Healthy &amp; Sustinable City Indicators software">
+<meta property="og:url" content="https://global-healthy-liveable-cities.github.io/2023/02/01/software/">
+<meta property="og:site_name" content="Global Healthy &amp; Sustainable City Indicators">
+<meta property="og:description" content="2023 draft in progress Background primerAimThe Global Healthy and Sustinable City Indicators (global-indicators) software can be used to analyse and report on health related spatial indicators of urba">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-01-31T13:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-01T06:52:24.462Z">
+<meta property="article:author" content="GHSCIC">
+<meta property="article:tag" content="accessibility urban-planning health transport public-health city city-government transportation-network urban public-transport urban-design">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-android-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-android-180x180.png">
+        
+      
+    
+    <!-- title -->
+    <title>Global Healthy &amp; Sustinable City Indicators software</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/2023/02/01/1000cities/">1000 Cities Challenge</a></li><!--
+     --><!--
+       --><li><a href="/2023/02/01/indicators/">Indicators</a></li><!--
+     --><!--
+       --><li><a href="/2023/02/01/software/">Analysis and reporting</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/02/01/1000cities/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://global-healthy-liveable-cities.github.io/2023/02/01/software/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&text=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&is_video=false&description=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Global Healthy &amp; Sustinable City Indicators software&body=Check out this article: https://global-healthy-liveable-cities.github.io/2023/02/01/software/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&name=Global Healthy &amp; Sustinable City Indicators software&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&t=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Background-primer"><span class="toc-number">1.</span> <span class="toc-text">Background primer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Aim"><span class="toc-number">1.1.</span> <span class="toc-text">Aim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage-in-brief"><span class="toc-number">1.2.</span> <span class="toc-text">Usage in brief</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">1.3.</span> <span class="toc-text">Configuration</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Software-installation"><span class="toc-number">2.</span> <span class="toc-text">Software installation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.1.</span> <span class="toc-text">Installation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-Configuration"><span class="toc-number">3.</span> <span class="toc-text">0. Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project"><span class="toc-number">3.1.</span> <span class="toc-text">Project</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Regions"><span class="toc-number">3.2.</span> <span class="toc-text">Regions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Datasets"><span class="toc-number">3.3.</span> <span class="toc-text">Datasets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Indicators"><span class="toc-number">3.4.</span> <span class="toc-text">Indicators</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Policies"><span class="toc-number">3.5.</span> <span class="toc-text">Policies</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Set-up-study-regions"><span class="toc-number">4.</span> <span class="toc-text">1. Set up study regions</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Analyse-neighbourhoods"><span class="toc-number">5.</span> <span class="toc-text">2. Analyse neighbourhoods</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Aggregate-indicators"><span class="toc-number">6.</span> <span class="toc-text">3. Aggregate indicators</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Generate-reports"><span class="toc-number">7.</span> <span class="toc-text">4. Generate reports</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Validation"><span class="toc-number">8.</span> <span class="toc-text">Validation</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Global Healthy &amp; Sustinable City Indicators software
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">GHSCI</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-01-31T13:00:00.000Z" itemprop="datePublished">2023-02-01</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  <div class="content" itemprop="articleBody">
+    <p><em>2023 draft in progress</em></p>
+<h1 id="Background-primer"><a href="#Background-primer" class="headerlink" title="Background primer"></a>Background primer</h1><h2 id="Aim"><a href="#Aim" class="headerlink" title="Aim"></a>Aim</h2><p>The Global Healthy and Sustinable City Indicators (global-indicators) software can be used to analyse and report on health related spatial indicators of urban design and transport features for regions of interest in the world using open and&#x2F;or custom data; for example, the percentage of population with access to some feature of interest (e.g. a public open space larger than 1.5 hectares in size) within 500 metres, or a composite indicator of neighbourhood walkability.   It does this using spatial and network analyses for sample points generated along a derived pedestrian network.  Results are aggregated to a grid with resolution corresponding to the input population data used, as well as overall summaries for the city or region of interest.  It outputs data in geopackage and csv formats, as well as maps, plots and can be configured to produce city reports for publication in multiple languages.</p>
+<h2 id="Usage-in-brief"><a href="#Usage-in-brief" class="headerlink" title="Usage in brief"></a>Usage in brief</h2><p>The software is run as a <a target="_blank" rel="noopener" href="https://www.w3schools.com/whatis/whatis_cli.asp">command line interface</a>.  In the future we would like to develop a graphical user interface option (e.g. run in a web browser), however our first priority was developing functionality for flexible analysis and reporting.</p>
+<p>The global-indicators software is hosted in our <a target="_blank" rel="noopener" href="https://github.com/global-healthy-liveable-cities/global-indicators">Github repository</a>.  Technically the software can be downloaded directly, however we recommend the usage of Git to support <a target="_blank" rel="noopener" href="https://doi.org/10.1186/1751-0473-8-7">version control</a> of your own edited configuration files, and allow for easier retrieval of potential updates. To retrieve the software we recommend installation of <a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>. and <a target="_blank" rel="noopener" href="https://www.docker.com/">Docker</a> (to set up the required computational environment and software dependencies).  Please follow the platform specific directions to install this software on your system.  If using Windows, it is recommended to install Windows Subsystem for Linux (WSL2) before installation of Docker, as per <a target="_blank" rel="noopener" href="https://docs.docker.com/desktop/windows/wsl/">https://docs.docker.com/desktop/windows/wsl/</a>.  </p>
+<p>The software is coded using Python, a popular programming language for scientific computing.  However, you don’t need to know how to program using Python to use the software.   Once configured, as described in the next paragraph, the software is simply run by running each of four scripts at the command line (e.g. in Windows cmd.exe or PowerShell, or a terminal prompt on MacOSX or Linux), followed by the name of a configured city or region: 1) study region setup; 2) neighbourhood analysis; 3) aggregation; 4) generate reports.</p>
+<p>For example, to set up a study region for analysis using the parameters (e.g. locations of data and some city details), the following is entered (‘city_name’ can be substituted for a city’s configured codename like “valencia” or “hong_kong”):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python 01_study_region_setup.py city_name</span><br></pre></td></tr></table></figure>
+
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>The software can be configured for new cities or regions of interest by modifying text files that use the YAML format.  This basically consists of a list of bullet points (keys) within which are nested associated values.  Our software reads in the main bullet point keys from the software, along with the associated values that may have been modified by users, and then uses it to perform the requested analyses. Additional configuration of features of interest on OpenStreetMap can be configured by modifying CSV files containing similar key:value pairs that are used to classify or <a target="_blank" rel="noopener" href="https://wiki.openstreetmap.org/wiki/Tags">tag</a> data.</p>
+<h1 id="Software-installation"><a href="#Software-installation" class="headerlink" title="Software installation"></a>Software installation</h1><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Once Git is installed, the software may be retrieved by cloning this repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/global-healthy-liveable-cities/global-indicators.git`</span><br></pre></td></tr></table></figure>
+
+<p>Once cloned, you can run <code>git pull</code> to ensure you have the latest version of the software as required.</p>
+<p>Once Docker is installed and running, it can be used to retrieve or update and then launch containers for the spatial database (PostgreSQL with PostGIS and pgRouting) and the Global Indicators software environment, by running the following from a linux (e.g. Ubuntu 20.04) command prompt:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash ./global-indicators.sh</span><br></pre></td></tr></table></figure>
+
+<p>This runs a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Shell_script">shell script</a> containing a series of commands, which may be alternatively entered manually:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker pull pgrouting/pgrouting</span><br><span class="line">docker run --name=postgis -d -e POSTGRES_PASSWORD=ghscic -p 5433:5432 --restart=unless-stopped --volume=/var/lib/postgis:/postgresql/13/main pgrouting/pgrouting</span><br><span class="line">docker pull globalhealthyliveablecities/global-indicators:latest</span><br><span class="line">docker run --<span class="built_in">rm</span> -it --shm-size=2g --net=host -v <span class="string">&quot;<span class="variable">$PWD</span>&quot;</span>:/home/ghsci/work globalhealthyliveablecities/global-indicators /bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>This will launch the software in the root directory of the project, with the spatial database running as persistent storage in the background.  Change directory to the <code>process</code> folder to run the processing scripts:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> process</span><br></pre></td></tr></table></figure>
+
+<p>The time taken to run analyses will vary depending on city size and density of features, and the specification of the computer running analyses.  A minimum of 8GB of RAM is recommended; in general, the more RAM and processors available, the better.  It is possible that lower specification machines will be able to perform analyses of smaller urban regions.</p>
+<p>In general, the main task is data sourcing and configuration of the region(s) of interest.</p>
+<h1 id="0-Configuration"><a href="#0-Configuration" class="headerlink" title="0. Configuration"></a>0. Configuration</h1><p>Before commencing analysis, you will need to generate and modify the configuration files using a text editor.  These can be initialised from the provided templates by running the following:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python 00_create_project_configuration_files.py</span><br></pre></td></tr></table></figure>
+
+<p>The following configuration files will then be located in the <code>process/configuration</code> folder, and may be be edited in a text editor (or in a spreadsheet editor such as Excel for the CSV file) to add and customise analysis for new regions:</p>
+<ul>
+<li>config.yml (overall project configuration)</li>
+<li>datasets.yml (defines datasets and metadata for OpenStreetMap and population, which can be referenced by regions)</li>
+<li>regions.yml (region specific details, including which datasets used - eg cities from a particular region could share common excerpts of population and OpenStreetMap, potentially)</li>
+<li>indicators.yml (some aspects of indicators calculated can be modified here, although this isn’t necessary; currently this is set up for our core indicators)</li>
+<li>osm_destinations.csv (a table of key pair tags that collectively identify the kinds of destinations to be evaluated for accessibility)</li>
+<li>osm_open_space.yml (definitions for identifying areas of open space using OpenStreetMap)</li>
+</ul>
+<p>The datasets and regions configuration files are the main ones that will require customisation to process new regions.</p>
+<p>Optionally, projects can be configured to:</p>
+<ul>
+<li>analyse <a target="_blank" rel="noopener" href="https://database.mobilitydata.org/">GTFS feed data</a> for evaluating accessibility to regularly serviced public transport</li>
+<li>use custom sets of OpenStreetMap tags for identifying destinations (see <a target="_blank" rel="noopener" href="https://taginfo.openstreetmap.org/">OpenStreetMap TagInfo</a> and region-specific tagging guidelines to inform relevant synonyms for points of interest)</li>
+<li>use custom destination data (a path to CSV with coordinates for points of interest for different destination categories can be configured in <code>process/configuration/regions.yml</code>)</li>
+</ul>
+<h2 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h2><p>The required datasets are:</p>
+<ul>
+<li>an OpenStreetMap .pbf file with coverage of the region (and time) of interest; this could be an historical planet file from <a target="_blank" rel="noopener" href="https://planet.openstreetmap.org/pbf/">https://planet.openstreetmap.org/pbf/</a>, or a region-specific excerpt from <a target="_blank" rel="noopener" href="https://download.geofabrik.de/">https://download.geofabrik.de/</a></li>
+<li><a target="_blank" rel="noopener" href="https://ghsl.jrc.ec.europa.eu/download.php">Global Human Settlements Layer</a> Urban Centres database and&#x2F;or administrative boundary for urban region of interest<ul>
+<li>the GHSL urban centres database may be saved and extracted to a folder like <code>process/data/GHS/GHS_STAT_UCDB2015MT_GLOBE_R2019A</code>, with this path recorded in the <code>urban_region</code> section of <code>process/configuration/datasets.yml</code>.</li>
+<li>Where possible and appropriate, we recommend using the intersection of an administrative boundary for a city’s metropolitan area with the empirically identified ‘urban area’ from the GHSL data.  The location of a geopackage containing an administrative boundary for the urban region of interest may be recorded under the <code>area_data</code> field for that region in <code>process/configuration/regions.yml</code>.   For example, “<code>area_data: ./data/boundaries.gpkg:Ghent</code>“ identifies the boundaries.gpkg geopackage as having a layer named ‘Ghent’ corresponding to the configured Ghent study region.</li>
+</ul>
+</li>
+<li>Population distribution grid data with coverage of urban region of interest<ul>
+<li>[GHS population grid (R2022)] (<a target="_blank" rel="noopener" href="https://ghsl.jrc.ec.europa.eu/download.php?ds=pop">https://ghsl.jrc.ec.europa.eu/download.php?ds=pop</a>) is recommended (for example, the 2020 Molleweide 100m grid tiles corresponding to your area of interest, with these saved and extracted to a folder like  <code>process/data/GHS/R2022A/GHS_POP_P2030_GLOBE_R2022A_54009_100_V1_0</code>, which may be specified in <code>process/configuration/datasets.yml</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Regions"><a href="#Regions" class="headerlink" title="Regions"></a>Regions</h2><h2 id="Datasets"><a href="#Datasets" class="headerlink" title="Datasets"></a>Datasets</h2><pre><code>- required:
+  - OpenStreetMap
+  - Population grid (Global Human Settlements Layer r2022a or later recommended)
+- optional
+  - Urban region 
+    - Global Human Settlements Layer Urban Centres Database recommended)
+      - this also contains additional covariates for urban areas that may be optionally linked
+  - GTFS (transport schedule data)
+</code></pre>
+<h2 id="Indicators"><a href="#Indicators" class="headerlink" title="Indicators"></a>Indicators</h2><h2 id="Policies"><a href="#Policies" class="headerlink" title="Policies"></a>Policies</h2><ul>
+<li>a checklist of policies for reporting purposes</li>
+</ul>
+<h1 id="1-Set-up-study-regions"><a href="#1-Set-up-study-regions" class="headerlink" title="1. Set up study regions"></a>1. Set up study regions</h1><p>This step creates a database for the city and processes the resources required for analyses, as defined in <code>configuration/config.yml</code> (project parameters), <code>configuration/regions.yml</code> (region parameters), <code>configuration/osm_destination_definitions.csv</code> (OpenStreetMap destination definitions), and <code>configuration/osm_open_space.yml</code> (OpenStreetMap open space definitions).</p>
+<p>To view the code names for configured cities, you can run the script without a city name: <code>python 01_study_region_setup.py</code>.  This displays the list of names for currently configured cities, each of which can be entered as arguments when running this script (city names are lower case, with underscores instead of spaces).</p>
+<p>To run the script, enter the following:</p>
+<p><code>python 01_study_region_setup.py [CITY CODE NAME]</code></p>
+<p>The following preparatory steps will be run for the specified region:</p>
+<ul>
+<li>Create database for region</li>
+<li>Create study region boundaries</li>
+<li>boundary for region of interest (ie. urban and&#x2F;or policy relevant administrative extent; pending configuration)</li>
+<li>buffered boundary for data retrieval and analysis to mitigate risk of edge effects</li>
+<li>Extract OpenStreetMap feature data for region</li>
+<li>Derive routable pedestrian network and intersections data</li>
+<li>Set up grid with population estimates for region</li>
+<li>Compile destinations using OpenStreetMap and&#x2F;or custom data</li>
+<li>Derive a dataset of areas of open space</li>
+<li>Currently focused on ‘public open space’</li>
+<li>It is planned to broaden this to include more flexibility in analysis (green space, blue space, etc)</li>
+<li>Pre-compute distance relationships for nodes and destinations to facilitate subsequent network analysis</li>
+<li>Summarise destinations</li>
+<li>Link urban covariates</li>
+<li>Analyse service frequency for public transport stops (optional; using GTFS data)</li>
+</ul>
+<h1 id="2-Analyse-neighbourhoods"><a href="#2-Analyse-neighbourhoods" class="headerlink" title="2. Analyse neighbourhoods"></a>2. Analyse neighbourhoods</h1><p>This step in the process performs local neighbourhood analysis for sample points across a city, creating urban indicators as defined in <code>indicators.yml</code>.  Similar to the above step, it is run:</p>
+<p> <code>python 02_neighbourhood_analysis.py [CITY CODE NAME]</code></p>
+<p>The following neighbourhood analyses are conducted:</p>
+<ul>
+<li>Access to amenities (food market, convenience store, open space typologies, public transport typologies)</li>
+<li>Daily Living score for access to amenities</li>
+<li>Walkability index<ul>
+<li>within city<ul>
+<li>A walkability index is calculated as a sum of standard scores (z-scores) for population density, street connectivity and daily living score for access to amenities</li>
+</ul>
+</li>
+<li>between cities<ul>
+<li>In addition to the within-city walkability index, a reference walkability index is also calculated.  Using the default configuration this draw upon 25-city study results to make comparisons using sub-indicator mean and standard deviation to calculate z-scores, which are then summed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-Aggregate-indicators"><a href="#3-Aggregate-indicators" class="headerlink" title="3. Aggregate indicators"></a>3. Aggregate indicators</h1><p>This step aggregates spatial urban indicator summaries for a small area grid (corresponding to the resolution of the input population grid) and overall city, exported as CSV (without geometry) and as layers to the geopackage file in the <code>data/study_region/[study region name]</code> folder.</p>
+<p>It is run by entering the following:</p>
+<p><code>python 03_aggregation.py [CITY CODE NAME]</code></p>
+<ul>
+<li>grid area estimates</li>
+<li>overall city summary estimates<ul>
+<li>distinction between spatial and population-weighted estimates</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-Generate-reports"><a href="#4-Generate-reports" class="headerlink" title="4. Generate reports"></a>4. Generate reports</h1><p>This script is used to generate reports, optionally in multiple languages, for processed cities.  It integrates the functionality previously located in the repository <a target="_blank" rel="noopener" href="https://github.com/global-healthy-liveable-cities/global_scorecards">https://github.com/global-healthy-liveable-cities/global_scorecards</a>, which was used to generate <a target="_blank" rel="noopener" href="https://doi.org/10.25439/rmt.c.6012649">city reports</a> for our 25 city study across 16 languages.  These can be configured using the configuration file _report_configuration.xlsx in conjunction with the regions, indicators and policies configuration files.</p>
+<p>This is run by entering:</p>
+<p><code>python 04_generate_reports.py --city [CITY CODE NAME]</code></p>
+<p>At the time of writing (23 February 2023) the included report template corresponds to that used in the 25 city, outputting a PDF report of policy and spatial indicator results, designed for web distribution.  Further templates are planned to support high quality print output, and optionally select policy and&#x2F;or spatial indicators for reporting.</p>
+<p>In addition it is planned that validation reporting with descriptive and analytical summaries will be incorporated.</p>
+<h1 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h1><p>Currently, validation is to be carried out by users independent of the process.  Previous validation code used to support our 25 city study’s reporting and quantitative analyses requires updating for use in the 1000 City Challenge context.  Along with further development of documentation and training materials, this is a priority for the team.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/2023/02/01/1000cities/">1000 Cities Challenge</a></li>
+         
+          <li><a href="/2023/02/01/indicators/">Indicators</a></li>
+         
+          <li><a href="/2023/02/01/software/">Analysis and reporting</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Background-primer"><span class="toc-number">1.</span> <span class="toc-text">Background primer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Aim"><span class="toc-number">1.1.</span> <span class="toc-text">Aim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage-in-brief"><span class="toc-number">1.2.</span> <span class="toc-text">Usage in brief</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">1.3.</span> <span class="toc-text">Configuration</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Software-installation"><span class="toc-number">2.</span> <span class="toc-text">Software installation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.1.</span> <span class="toc-text">Installation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-Configuration"><span class="toc-number">3.</span> <span class="toc-text">0. Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project"><span class="toc-number">3.1.</span> <span class="toc-text">Project</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Regions"><span class="toc-number">3.2.</span> <span class="toc-text">Regions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Datasets"><span class="toc-number">3.3.</span> <span class="toc-text">Datasets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Indicators"><span class="toc-number">3.4.</span> <span class="toc-text">Indicators</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Policies"><span class="toc-number">3.5.</span> <span class="toc-text">Policies</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Set-up-study-regions"><span class="toc-number">4.</span> <span class="toc-text">1. Set up study regions</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Analyse-neighbourhoods"><span class="toc-number">5.</span> <span class="toc-text">2. Analyse neighbourhoods</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Aggregate-indicators"><span class="toc-number">6.</span> <span class="toc-text">3. Aggregate indicators</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Generate-reports"><span class="toc-number">7.</span> <span class="toc-text">4. Generate reports</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Validation"><span class="toc-number">8.</span> <span class="toc-text">Validation</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://global-healthy-liveable-cities.github.io/2023/02/01/software/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&text=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&is_video=false&description=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Global Healthy &amp; Sustinable City Indicators software&body=Check out this article: https://global-healthy-liveable-cities.github.io/2023/02/01/software/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&title=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&name=Global Healthy &amp; Sustinable City Indicators software&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://global-healthy-liveable-cities.github.io/2023/02/01/software/&t=Global Healthy &amp; Sustinable City Indicators software"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2019-2023
+    GHSCIC
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/2023/02/01/1000cities/">1000 Cities Challenge</a></li><!--
+     --><!--
+       --><li><a href="/2023/02/01/indicators/">Indicators</a></li><!--
+     --><!--
+       --><li><a href="/2023/02/01/software/">Analysis and reporting</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
