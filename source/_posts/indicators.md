@@ -21,5 +21,4 @@ Boeing, G. el al. (2022). Using Open Data and Open-Source Software to Develop Sp
 # Call to action
 Giles-Corti, Bet al. (2022). What next? Expanding our view of city planning and global health, and implementing and monitoring evidence-informed policy. The Lancet Global Health, May 2022. https://doi.org/10.1016/S2214-109X(22)00066-3
 
-Click here to download an infographic summarizing the key findings of the 2022 series of urban planning, transport and health in The 
-Lancet Global Health.
+An infographic summarizing the key findings of the 2022 series of urban planning, transport and health in The Lancet Global Health is available [here](https://www.thelancet.com/pb-assets/Lancet/infographics/urban-design-2022/urban-design-2022.pdf).
