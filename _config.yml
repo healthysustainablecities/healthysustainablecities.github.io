@@ -8,7 +8,7 @@ subtitle: "FAQ"
 description: >-
   Open-source software for calculating and reporting on policy and spatial indicators for healthy, sustainable cities worldwide using open or custom data.  This tool has been created to support the 1000 Cities Challenge of the Global Observatory of Healthy and Sustinable Cities (https://healthysustainablecities.org).
   <br><br>Policy indicators can be evaluated using our [policy checklist](resources/GOHSC_urban_policy_checklist_v1.0.0.xlsx).
-  <br><br>To calculate spatial indicators or generate policy and spatial indicator reports, see the directions on [Analysis and Reporting](2023/02/01/software/).
+  <br><br>To calculate spatial indicators or generate policy and spatial indicator reports, see the directions on [Analysis and Reporting](software/).
 keywords: accessibility urban-planning health transport public-health city city-government transportation-network urban public-transport urban-design
 author: GHSCIC
 language: en
@@ -17,7 +17,7 @@ timezone: 'Australia/Melbourne'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://global-healthy-liveable-cities.github.io
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks

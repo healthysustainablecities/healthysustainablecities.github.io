@@ -21,7 +21,9 @@ Lowe, M. et al. (2022). City planning policies to support health and sustainabil
 Cerin, E. et al. (2022). Determining thresholds for spatial urban design and transport features to create healthy and sustainable cities: findings from the IPEN Adult study. The Lancet Global Health, Accepted May 2022. https://doi.org/10.1016/S2214-109X(22)00068-7
 
 # Spatial indicator analysis
-Our open source [Global Healthy and Sustainable City Indicators](https://github.com/global-healthy-liveable-cities/global-indicators) software supports users to calculate and report on spatial and policy indicators for healthy and sustainable cities.  See the directions on [Analysis and Reporting](2023/02/01/software/) for more details.
+Our open source [Global Healthy and Sustainable City Indicators](https://github.com/global-healthy-liveable-cities/global-indicators) software supports users to calculate and report on spatial and policy indicators for healthy and sustainable cities.  
+
+See the directions on [Analysis and Reporting](2023/02/01/software/) for more details.
 
 Boeing, G. el al. (2022). Using Open Data and Open-Source Software to Develop Spatial Indicators of Urban Design and Transport Features for Achieving Healthy and Sustainable Cities. The Lancet Global Health, May 2022. https://doi.org/10.1016/S2214-109X(22)00072-9
 
