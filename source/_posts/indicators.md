@@ -10,7 +10,7 @@ Giles-Corti, B. et al. (2022). Creating healthy and sustainable cities: what get
 ![image](https://ars.els-cdn.com/content/image/1-s2.0-S2214109X22000663-gr1.jpg)
 
 # Policy indicator analysis
-Our [policy checklist](resources/gohsc-policy-indicator-checklist.xlsx) tool has now been updated to support the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities).
+Our [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) tool has now been updated to support the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities).
 
 For more information on the concepts underlying the tool, see:
 
