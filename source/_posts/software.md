@@ -170,7 +170,7 @@ This technique can be used summarise the overall impacts of a range of choices a
 
 ## Policy checklist
 
-A [policy checklist](resources/GOHSC_urban_policy_checklist_v1.0.1.xlsx) tool has been developed to support the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities). 
+A [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) tool has been developed to support the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities). 
 For more information on the concepts underlying the tool, see: Lowe, M., Adlakha D., et al. (2022). City planning policies to support health and sustainability: an international comparison of policy indicators for 25 cities. The Lancet Global Health, May 2022. https://doi.org/10.1016/S2214-109X(22)00069-9.
 
 Once the policy checklist has been completed, the results can be summarised, queried and generated into a PDF report using the GHSCI web app:
