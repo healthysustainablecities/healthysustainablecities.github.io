@@ -432,7 +432,8 @@ body th {
 }
 body td {
   padding: 0 8px;
-  border-bottom: none;
+  border-bottom: 1px solid #ddd;
+  vertical-align: text-top;
 }
 @font-face {
   font-style: normal;

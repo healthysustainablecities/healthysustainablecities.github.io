@@ -421,7 +421,8 @@ body table {
   text-align: left;
   font-size: 12px;
   overflow: auto;
-  display: block;
+  display: table;
+  vertical-align: text-top;
 }
 body th {
   padding: 8px;
@@ -433,6 +434,7 @@ body th {
 body td {
   padding: 0 8px;
   border-bottom: none;
+  vertical-align: text-top;
 }
 @font-face {
   font-style: normal;
