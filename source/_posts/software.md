@@ -1196,15 +1196,19 @@ Following completion of successful processing of a study region, the following p
 |figures                                                         | Folder| Contains generated maps and figures|
 |\_\_*region name*\_\_*codename*_processing_log.txt | text file| A text file that is progressively appended to with the screen outputs for analyses that are not otherwise displayed.  This contains a record of processing, and is useful when debugging if something has gone awry with a particular configuration or supplied data|
 |_parameters.yml | text file| A text file containing records of the most recent configuration analysed (on detection of a new version, older versions will be retained with a suffix indicating the date at which it was current)|
-|*codename*_es_yyyy_1600m_buffer.gpkg | geopackage| A geopackage containing derived study region features of interest used in analyses, and including grid and overall summary results for this region |
-|*codename*_es_yyyy_1600m_pedestrian_osm_yyyymmdd.graphml | graphml| A graphml representation of the derived routable pedestrian network for this buffered study region |
-|*codename*_es_yyyy_1600m_pedestrian_osm_yyyymmdd_proj.graphml | graphml| A graphml representation of the derived routable pedestrian network for this buffered study region, projected with units in metres |
-|*codename*_es_yyyy_city_yyyy-mm-dd.csv | CSV file| Overall summary results of indicator analysis for this region |
-|*codename*_es_yyyy_grid_100mm_yyyy-mm-dd.csv | CSV file| Grid summary results of indicator analysis for this region |
+|analysis_report_yyyy-mm-dd_hhmm.pdf | PDF file| A PDF report summarising approach taken for analysis of the core set of spatial indicators and generation of associated resources |
+|compare_*reference codename*_*comparison_codename*_yyyy-mm-dd_hhmm.csv | CSV file| A CSV spreadsheet containing a comparison of summary indicator results for a reference study region and a comparison study region (generated as a result of running the [compare](./#Compare) process) |
+|*codename*_1600m_buffer.gpkg | Geopackage file| A geopackage containing derived study region features of interest used in analyses, and including grid and overall summary results for this region |
+|*codename*_indicators_{*resolution*}_yyyy.csv | CSV file| Grid or small area summary results of indicator analysis for this region |
+|*codename*_indicators_region.csv | CSV file| Overall summary results of indicator analysis for this region |
+|*codename*_metadata.xml | XML file| XML metadata (ISO19115) |
+|*codename*_metadata.yml | YML file| YML metadata |
+|output_data_dictionary.csv | CSV file| CSV data dictionary |
+|output_data_dictionary.xlsx | XLSX file| Formatted Excel data dictionary |
 |*codename*_osm_yyyymmdd.pbf | PBF file| An excerpt from OpenStreetMap for this buffered study region as configured |
-|poly_li_*codename*_yyyy.poly | text file| A polygon boundary file; this is generated for the buffered urban region of interest as per configuration in regions/_codename_.yml, and is used to excerpt a portion of OpenStreetMap for this region from the configured input data|
-|*population*\_*codename*\_*epsg code*.tif | raster image| A population raster for this buffered study region, excerpted from the input data, in the projects coordinate reference system |
-|*population*\_*codename*\_*crs*.tif| raster image| A population raster for this buffered study region, excerpted from the input data, in the coordinate reference system of the input population data (e.g. Mollweide, in the case of the recommended GHS-POP data) |
+|poly_*codename*.poly | text file| A polygon boundary file; this is generated for the buffered urban region of interest as per configuration in regions/_codename_.yml, and is used to excerpt a portion of OpenStreetMap for this region from the configured input data|
+|population\_*resolution*\_*codename*\_*project epsg code*.tif | TIF file| A population raster for this buffered study region, excerpted from the input data, in the projects coordinate reference system |
+|population\_*resolution*\_*codename*\_*source crs*.tif| TIF file| A population raster for this buffered study region, excerpted from the input data, in the coordinate reference system of the input population data (e.g. Mollweide, in the case of the recommended GHS-POP data) |
 
 Optionally, projects can be configured to:
 
