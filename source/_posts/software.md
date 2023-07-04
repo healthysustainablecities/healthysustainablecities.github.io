@@ -175,7 +175,7 @@ For more information on the concepts underlying the tool, see: Lowe, M., Adlakha
 
 Once the policy checklist has been completed, the results can be summarised, queried and generated into a PDF report using the GHSCI web app:
 ![image](images/policy_file_picker.jpg)
-![image](images/policy report summary.jpg)
+![image](images/policy_report_summary.jpg)
 
 
 ## Command line usage
