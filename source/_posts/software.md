@@ -175,8 +175,10 @@ For more information on the concepts underlying the tool, see: Lowe, M., Adlakha
 
 Once the policy checklist has been completed, the results can be summarised, queried and generated into a PDF report using the GHSCI web app:
 ![image](images/policy_file_picker.jpg)
-![image](images/policy_report_summary.jpg)
+*Figure 6. Select and load a completed policy indicator checklist*
 
+![image](images/policy_report_summary.jpg)
+*Figure 7. Query a completed policy checklist for key phrases, and generate a summary PDF document*
 
 ## Command line usage
 
@@ -186,7 +188,7 @@ Once the policy checklist has been completed, the results can be summarised, que
 Depending on the computer you’re using, this should result in a screen like this:
 
 ![image](images/0_run_ghscic.jpg)
-*Figure 6. Once you have Docker Desktop installed, run the software in a command line interface.*
+*Figure 8. Once you have Docker Desktop installed, run the software in a command line interface.*
 
 If you’ve got this far successfully, it means that Docker has retrieved the required computational environment and dependencies for running our software and launched it in a ‘container’.  This is a bit like an isolated virtual Linux computer, which helps our software run regardless of each user’s different computer context (operating system, software etc).  It also launches a PostGIS spatial database container in the background too, which helps with the processing and data management in the background.
 
@@ -199,35 +201,35 @@ The second step is to analyse a region, drawing on the data that you have retrie
 To see the list of codenames for configured cities, run the script without providing a codename and it will let you know this, as well as a reminder for how to run the process overall.
 
 ![image](images/2a_list_codenames.jpg)
-*Figure 7. The codenames for configured cities can be viewed by running `analysis`.*
+*Figure 9. The codenames for configured cities can be viewed by running `analysis`.*
 
 Or, run it with a codename for a fully configured city (e.g. `example_ES_Las_Palmas_2023`, Las Palmas, for which data has been provided) and it will proceed to analyse the city:
 
 ![image](images/2b_analyse_regions.jpg)
-*Figure 8. Running neighbourhood analysis for Las Palmas by entering `analysis example_ES_Las_Palmas_2023.py`.*
+*Figure 10. Running neighbourhood analysis for Las Palmas by entering `analysis example_ES_Las_Palmas_2023.py`.*
 
 Finally, you can generate a report by entering `generate example_ES_Las_Palmas_2023` (or the codename for another city, once you source its data, configure it and analyse it):
 
 ![image](images/3_generate_resources.jpg)
-*Figure 9. The output of successful report generation for Las Palmas, which also provides the path to find the output PDF file(s).*
+*Figure 11. The output of successful report generation for Las Palmas, which also provides the path to find the output PDF file(s).*
 
 Once you’ve successfully run the process, output files will be located for the analysed city or region in an output folder (e.g. `process\data\_study_region_outputs\example_ES_Las_Palmas_2023`, located within your project directory):
 
 ![image](images/folder_process_data_output.jpg)
-*Figure 10. The list of output files and folders resulting from running the full 3-step process; these are explained later in this guide.*
+*Figure 12. The list of output files and folders resulting from running the full 3-step process; these are explained later in this guide.*
 
 If anything goes wrong (e.g. you tried to run any of the other cities, for which data haven’t been provided), the process will stop and indicate some kind of error.  A log file will be generated in the study region folder that can assist with debugging, or otherwise verifying the process has been successful and let you see some of the details of how things are processed (we’ll go into details later).  In the above screenshot this is called `__Las Palmas de Gran Canaria__example_ES_Las_Palmas_2023_processing_log.txt`.
 
 As a record for how you ran your analysis, the file `_parameters.yml` contains a record of your project, region and data configurations for this region.  Spatial features used in analysis as well as grid and overall city summaries are saved within a geopackage file, and CSV files of final summary results are provided too.  The PDF reports are located within the folder `_web reports`, while the maps and images generated for use in that report are located in the `figures` folder.
 
 ![image](images/folder_process_data_output_figures.jpg)
-*Figure 11. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
+*Figure 13. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
 
 ![image](images/folder_process_data_output_reports.jpg)
-*Figure 12. PDF reports in English and Spanish for Las Palmas.*
+*Figure 14. PDF reports in English and Spanish for Las Palmas.*
 
 ![image](images/pdf_report.jpg)
-*Figure 13. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
+*Figure 15. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
 
 **Note that an example policy analysis has not been provided for Las Palmas.  The policy review instrument has been updated, and subsequent updates to the software will accommodate this in the reporting templates.**
 
@@ -925,7 +927,7 @@ Region configuration files are named using a codename to represent city when use
 To initialise a new study region configuration file, you can run `configure <codename>` (e.g. `configure example_ES_Las_Palmas_2023`; this would advise you that the Las Palmas example study region configuration has already been initialised, and suggest how to run analyses for it).  
 
 ![image](images/1_create_project_configuration_files.jpg)
-*Figure 10. Output resulting from creating the configuration files; if you were to run this a second time after successfully running it, it would recognise and report that the files already exist, and otherwise remind you about the purpose of the respective configuration files.*
+*Figure 16. Output resulting from creating the configuration files; if you were to run this a second time after successfully running it, it would recognise and report that the files already exist, and otherwise remind you about the purpose of the respective configuration files.*
 
 Alternatively, you can initialise a configuration file using Python, for example for the Australian city of Melbourne with a target time point of 2023:
 ```
