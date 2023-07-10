@@ -1220,21 +1220,24 @@ Optionally, projects can be configured to:
 
 # Frequently Asked Questions
 
-## Processing time
-The time taken to run analyses will vary depending on city size and density of features, and the specification of the computer running analyses.  A minimum of 8GB of RAM is recommended; in general, the more RAM and processors available, the better.  It is possible that lower specification machines will be able to perform analyses of smaller urban regions.  The provided example city of Las Palmas de Gran Canaria should take about 8 minutes to run on a standard laptop, however some larger cities may take a number of hours to process.
+## What if I get stuck?
 
-## What do I do if I get stuck?
+### Check the log file
+Sometimes things go wrong, and you might get a message advising you of this.  For example, an entry in the region configuration YAML might be missing a space after a colon character (for example, `:true` instead of `: true`) or a path to data may have a typographical error.  The nature of warnings will depend on how you are running the software.  However, if your configuration file has successfully been loaded and analysis has commenced, the most informative place to look is the text file log that can be found in the [data output](https://global-healthy-liveable-cities.github.io/software/#Data-output-folder) folder for your study region.  Open this file in a text editor and scroll to the end to find the point where things may have gone awry.
 
-### Check the log text file
-Sometimes things go wrong, and you might get a message advising you of this.  For example, an entry in the region configuration YAML might be missing a space after a colon character (`:oops` instead of `: oops`) or a path to data may have a typographical error.  The nature of warnings will depend on how you are running the software, however, if your configuration file has successfully been loaded and analysis has commenced, the most informative place to look is the text file log that can be found in the [data output](https://global-healthy-liveable-cities.github.io/software/#Data-output-folder) folder for your study region.  Open this file in a text editor and scroll to the end to find the point where things may have gone awry.
-
-### Check your configuration file 
+### Check configurations
 If the data output folder for your study region hasn't been created or doesn't contain an analysis text log after attempting to run the [analysis](https://global-healthy-liveable-cities.github.io/software/#Analysis) workflow, it is likely that an error in your configuration file has prevented it being successfully loaded.  Check to see if an error was displayed, e.g. advising that configured data files could not be located at the paths specified.  Consider comparing your study region configuration with the provided example and see what might differ.  A small error could stop the file being successfully loaded, but in many cases there are clues given as to where to find and correct this.
 
-### Check for any open or resolved issues online
+Configuration files are easier to read and edit in a text editor that provides [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting).  For example, you can view and edit the YAML files using the provided [Jupyter Lab](https://global-healthy-liveable-cities.github.io/software/#Jupyter-Lab) interface in your web browser.  Alternatively, there are software options such as [VS Code](https://code.visualstudio.com/) or [Notepad++](https://notepad-plus-plus.org/).
+
+### Check for issues
 Other users or the developers themselves may have come across the issue you are experiencing and posted a question or resolution for this on our software code repository.  You can browse, query or add a comment to open or closed issues [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues).
 
 ### Report a bug, request a feature, or contribute to the project
 Perhaps you have come across a use case or data format that we haven't considered or accounted for.  You can report a bug or make a feature request online [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues/new/choose).   To ensure our community can help you, try to provide as much contextual detail as possible.  This can include copying text from your log file and configuration file(s) as appropriate; often the solutions will be found by understanding what is contained in these documents.  
 
 Contributions are welcome! Some advice on doing this is found [here](https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution).
+
+## Processing time
+The time taken to run analyses will vary depending on city size and density of features, and the specification of the computer running analyses.  A minimum of 8GB of RAM is recommended; in general, the more RAM and processors available, the better.  It is possible that lower specification machines will be able to perform analyses of smaller urban regions.  The provided example city of Las Palmas de Gran Canaria should take about 8 minutes to run on a standard laptop, however some larger cities may take a number of hours to process.
+
