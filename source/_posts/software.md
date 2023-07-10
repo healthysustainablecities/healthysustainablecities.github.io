@@ -1218,42 +1218,23 @@ Optionally, projects can be configured to:
 - use custom sets of OpenStreetMap tags for identifying destinations (see [OpenStreetMap TagInfo](https://taginfo.openstreetmap.org/) and region-specific tagging guidelines to inform relevant synonyms for points of interest)
 - use custom destination data (a path to CSV with coordinates for points of interest for different destination categories can be configured in `process/configuration/regions/_codename_.yml`)
 
+# Frequently Asked Questions
+
 ## Processing time
 The time taken to run analyses will vary depending on city size and density of features, and the specification of the computer running analyses.  A minimum of 8GB of RAM is recommended; in general, the more RAM and processors available, the better.  It is possible that lower specification machines will be able to perform analyses of smaller urban regions.  The provided example city of Las Palmas de Gran Canaria should take about 8 minutes to run on a standard laptop, however some larger cities may take a number of hours to process.
-Optional configuration of other parameters is also possible. 
-<!--   
-# Analysis
-To analyse a configured region, enter
 
-```python 2_analyse_region.py [*configured city codename*]```
+## What do I do if I get stuck?
 
-This creates a database for the city and processes the resources required for analyses, according to the way they have been configured.
+### Check the log text file
+Sometimes things go wrong, and you might get a message advising you of this.  For example, an entry in the region configuration YAML might be missing a space after a colon character (`:oops` instead of `: oops`) or a path to data may have a typographical error.  The nature of warnings will depend on how you are running the software, however, if your configuration file has successfully been loaded and analysis has commenced, the most informative place to look is the text file log that can be found in the [data output](https://global-healthy-liveable-cities.github.io/software/#Data-output-folder) folder for your study region.  Open this file in a text editor and scroll to the end to find the point where things may have gone awry.
 
-To view the code names for configured cities, you can run the script without a city name.  This displays the list of names for currently configured cities, each of which can be entered as arguments when running this script.
+### Check your configuration file 
+If the data output folder for your study region hasn't been created or doesn't contain an analysis text log after attempting to run the [analysis](https://global-healthy-liveable-cities.github.io/software/#Analysis) workflow, it is likely that an error in your configuration file has prevented it being successfully loaded.  Check to see if an error was displayed, e.g. advising that configured data files could not be located at the paths specified.  Consider comparing your study region configuration with the provided example and see what might differ.  A small error could stop the file being successfully loaded, but in many cases there are clues given as to where to find and correct this.
 
-Local neighbourhood analysis for sample points is then performed across a city, creating urban indicators as defined in `indicators.yml`.  The following neighbourhood analyses are conducted:
+### Check for any open or resolved issues online
+Other users or the developers themselves may have come across the issue you are experiencing and posted a question or resolution for this on our software code repository.  You can browse, query or add a comment to open or closed issues [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues).
 
-- Access to amenities (food market, convenience store, open space typologies, public transport typologies)
-- Daily Living score for access to amenities
-- Walkability index
-   - within city
-        - A walkability index is calculated as a sum of standard scores (z-scores) for population density, street connectivity and daily living score for access to amenities
-   - between cities
-        - In addition to the within-city walkability index, a reference walkability index is also calculated. 
+### Report a bug, request a feature, or contribute to the project
+Perhaps you have come across a use case or data format that we haven't considered or accounted for.  You can report a bug or make a feature request online [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues/new/choose).   To ensure our community can help you, try to provide as much contextual detail as possible.  This can include copying text from your log file and configuration file(s) as appropriate; often the solutions will be found by understanding what is contained in these documents.  
 
-Finally, spatial urban indicator summaries are aggregated for a small area grid (corresponding to the resolution of the input population grid; e.g. 100 metres using the recommended GHSL population grid data) and overall city, exported as CSV (without geometry) and as layers to the geopackage file in the `data/study_region/[study region name]` folder.
-
-
-# Reporting
-
-To generate maps, figures and reports for the results, run
-
-```python 3_generate_resources.py [CITY CODE NAME]```
-
-This script is used to generate reports, optionally in multiple languages, for processed cities.  It integrates the functionality previously located in the repository https://github.com/global-healthy-liveable-cities/global_scorecards, which was used to generate [city reports](https://doi.org/10.25439/rmt.c.6012649) for our 25 city study across 16 languages.  These can be configured using the configuration file _report_configuration.xlsx in conjunction with the regions, indicators and policies configuration files.
-
-At the time of writing (February 2023) the included report template is the same as that used in the 25 city study, outputting a PDF report of policy and spatial indicator results, designed for web distribution.  In addition a folder of maps and figures are also produced, optionally in multiple languages, pending configuration.  Further templates are planned to support high quality print output, and optionally select policy and/or spatial indicators for reporting.
-
-In addition it is planned that validation reporting with descriptive and analytical summaries will be incorporated.Currently, validation is to be carried out by users independent of the process.   -->
-
-
+Contributions are welcome! Some advice on doing this is found [here](https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution).
