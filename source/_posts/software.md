@@ -61,7 +61,7 @@ A fully configured example study region is provided along with data for users to
 
 ## Software set up
 
-- Download and unzip the latest [GHSCI software](https://github.com/global-healthy-liveable-cities/global-indicators/releases/) release to a desired project directory on your computer
+- Download and unzip the [GHSCI software](https://github.com/global-healthy-liveable-cities/global-indicators/archive/refs/heads/main.zip) to a desired project directory on your computer
 - Install and run [Docker Desktop](https://docs.docker.com/desktop/) according to the guidelines for your operating system of choice
 - Run the GHSCI software by opening the project directory where you extracted the software using a command line interface (e.g.  [Terminal](https://aka.ms/terminal) on Windows, [Terminal](https://support.apple.com/en-au/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) on MacOS, or [Bash](https://www.gnu.org/software/bash/) on Linux):
   - on Windows open the folder in Terminal or cmd.exe and enter '.\global-indicators.bat'
