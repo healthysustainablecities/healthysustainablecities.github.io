@@ -11,6 +11,10 @@ The software can be configured to support comparisons within- and between-cities
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/6f7d9c8a-47b2-496f-983b-820f5e86d0b5)
 *Figure 1. The GHSCI tool can be used to create and report on policy and spatial indicators for cities around the world from your web browser, or optionally as code, a Jupyter notebook, or from command line*
 
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/embed/videoseries?list=PLOllH2OXS1IYpZj6TXlYfdmAcuGUln1Jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
+
 ## What does this do?
 The software can be configured to calculate and report on policy and spatial indicators for healthy and sustainable cities in diverse contexts globally.   The core set of spatial indicators are calculated for point locations, a small area grid (e.g. 100m), and overall city estimates.  Optionally, indicators can also be calculated for custom areas, like administrative boundaries or specific neighbourhoods of interest. In addition CSV files containing indicators for area summaries and the overall city are also generated, omitting geometry.  
 
