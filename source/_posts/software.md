@@ -16,7 +16,7 @@ The software can be configured to support comparisons within- and between-cities
 {% endraw %}
 
 ## What does this do?
-The software can be configured to calculate and report on policy and spatial indicators for healthy and sustainable cities in diverse contexts globally.   The core set of spatial indicators are calculated for point locations, a small area grid (e.g. 100m), and overall city estimates.  Optionally, indicators can also be calculated for custom areas, like administrative boundaries or specific neighbourhoods of interest. In addition CSV files containing indicators for area summaries and the overall city are also generated, omitting geometry.  
+The software can be configured to calculate and report on policy and spatial indicators for healthy and sustainable cities in diverse contexts globally.   The core set of spatial indicators are calculated for point locations, a small area grid (e.g. 100m), and overall city estimates.  Optionally, indicators can also be calculated for custom areas, like administrative boundaries or specific neighbourhoods of interest. In addition CSV files containing indicators for area summaries and the overall city are also generated, omitting geometry.  Metadata and data dictionaries are generated to accompany the data, along with reports in multiple languages.
 
 The default core set of spatial urban indicators calculated includes:
 
@@ -32,8 +32,6 @@ The default core set of spatial urban indicators calculated includes:
 - A walkability index
 
 The tool can also be used to summarise and visualise policy indicators data collected using the [1000 Cities challenge policy checklist tool](../resources/gohsc-policy-indicator-checklist.xlsx).
-
-Metadata and data dictionaries are generated to accompany the data, along with reports in multiple languages.
 
 The resulting city-specific resources can be used to provide evidence to support policy makers and planners to strengthen urban policy, target interventions within cities, compare performance across cities, and when measured across time can be used to monitor progress towards achieving urban design goals for reducing inequities. Moreover, they provide a rich source of data for those advocating for disadvantaged and vulnerable community populations.
 
@@ -78,7 +76,7 @@ This will retrieve the computational environment and launch the Global Healthy a
 *Figure 2. With Docker Desktop installed and running, run the global-indicators command to initialise the software environment and view usage instructions*
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=GvKASDN-XPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/GvKASDN-XPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ## Running the software
@@ -88,21 +86,21 @@ The software can be used to configure study regions, conduct analysis, generate 
 - To launch the app in your web browser, type `ghsci` and open the displayed URL in your web browser
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=QlsGSqIbb7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Jupyter Lab
 - To use a [Jupyter](https://jupyter.org/) Notebook, type `lab`, open the displayed URL in your web browser and double click to select the example notebook `example.ipynb` from the left-hand side browser pane
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=dOjbRDqgYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/dOjbRDqgYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Command line
 - The basic shortcut commands `configure`, `analysis`, `generate` and `compare` can be run at the commandline in conjunction with a codename referring to your study region
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=x0YntNVmdTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/x0YntNVmdTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Python
@@ -132,7 +130,7 @@ r.drop()
 ```
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=FMr_acmcbLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/FMr_acmcbLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ## Example analysis
@@ -177,15 +175,15 @@ The PDF reports (Figures 8 and 9) are located within the folder `_web reports`, 
 ![image](images/folder_process_data_output_reports.jpg)
 *Figure 8. PDF reports in English and Spanish for Las Palmas.*
 
-![image](images/folder_process_data_output_figures.jpg)
-*Figure 9. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
-
 ![image](images/pdf_report.jpg)
-*Figure 10. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
+*Figure 9. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
+
+![image](images/folder_process_data_output_figures.jpg)
+*Figure 10. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
 
 ### Compare 
 You can use the `Compare` function to
-- evaluating the overall impact of parameters and data used (sensitivity analyses)
+- evaluate the overall impact of parameters and data used (sensitivity analyses)
 - compare results of different cities (benchmarking)
 - compare results for the same study region across time (monitoring)
 - evaluate the impact of hypothetical scenarios or interventions through analysis of modified data to represent these
@@ -267,7 +265,7 @@ Before commencing analysis, your study regions will need to be configured with d
 The configuration files are text files using the [YAML](https://yaml.org/) (.yml) format.  They can be opened and modified using a text editor to define region specific details, including which datasets are being used, where they were sourced from, and how they should be interpreted.  Region configuration files are located within the `configuration/regions` sub-folder. An example region configuration for Las Palmas de Gran Canaria (for which data supporting analysis is included) has been provided in the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml`.  This can also be viewed online [here](https://github.com/global-healthy-liveable-cities/global-indicators/blob/main/process/configuration/regions/example_ES_Las_Palmas_2023.yml).  At the top of the configuration file are some instructions that describe how to understand and modify the file.
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 New regions can be added by using the `configuration` utility functions described elsewhere that initialise a new region configuration file using a city [codename](./#Codenames) at `process/configuration/regions/_codename_.yml`.  This file can be edited using a text editor, or within [Jupyter Lab](./#Jupyter-Lab).
@@ -1148,7 +1146,7 @@ GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R
 The global-indicators software has been designed to report on both policy and spatial indicator results.  Once the [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) has been completed for a city, save this in the project data folder (e.g. within `data/policy_review`).  Using the GHSCI [web app](./#Web-app) interface you can now select this completed file to view, query and generate a PDF summary report. 
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/watch?v=QlsGSqIbb7M&t=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M?start=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### GTFS transit feed data
