@@ -6,7 +6,7 @@ author: GHSCI
 # Overview
 The [Global Healthy and Sustainable City Indicators (GHSCI, or global-indicators) software](https://github.com/global-healthy-liveable-cities/global-indicators) is an open-source tool for measuring, monitoring and reporting on policy and spatial urban indicators for healthy, sustainable cities worldwide using open or custom data. Designed to support participation in the Global Observatory of Healthy and Sustainable Cities' 1000 city challenge, it can be run as code or as an app in your web browser.
 
-The software can be configured to support comparisons within- and between-cities and across time, benchmarking, analysis and monitoring of local policies, tracking progress, and inform interventions towards achieving healthy, equitable and sustainable cities. It also support generating resources including maps, figures and reports in multiple languages, so these can be made accessible for use by local communities and stakeholders as a source of evidence to advocate for change.
+The software can be configured to support comparisons within- and between-cities and across time, benchmarking, analysis and monitoring of local policies, tracking progress, and inform interventions towards achieving healthy, equitable and sustainable cities (Figure 1). It also supports generating resources including maps, figures and reports in multiple languages, so these can be made accessible for use by local communities and stakeholders as a source of evidence to advocate for change.
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/6f7d9c8a-47b2-496f-983b-820f5e86d0b5)
 *Figure 1. The GHSCI tool can be used to create and report on policy and spatial indicators for cities around the world from your web browser, or optionally as code, a Jupyter notebook, or from command line*
@@ -17,12 +17,6 @@ The software can be configured to support comparisons within- and between-cities
 
 ## What does this do?
 The software can be configured to calculate and report on policy and spatial indicators for healthy and sustainable cities in diverse contexts globally.   The core set of spatial indicators are calculated for point locations, a small area grid (e.g. 100m), and overall city estimates.  Optionally, indicators can also be calculated for custom areas, like administrative boundaries or specific neighbourhoods of interest. In addition CSV files containing indicators for area summaries and the overall city are also generated, omitting geometry.  
-
-The tool can also be used to summarise and visualise a policy audit conducted using the 1000 Cities challenge tool.
-
-Metadata and data dictionaries are generated to accompany the data, along with report in multiple languages to promote access by diverse audiences, and in particular local communities and decision makers in the cities being studied.
-
-The resulting city-specific resources can be used to provide evidence to support policy makers and planners to target interventions within cities, compare performance across cities, and when measured across time can be used to monitor progress for achieving urban design goals for reducing inequities. Moreover, they provide a rich source of data for those advocating for disadvantaged and vulnerable community populations, to provide evidence for whether urban policies for where they live are serving their needs.
 
 The default core set of spatial urban indicators calculated includes:
 
@@ -37,6 +31,12 @@ The default core set of spatial urban indicators calculated includes:
 - A score for access to a range of daily living amenities
 - A walkability index
 
+The tool can also be used to summarise and visualise policy indicators data collected using the [1000 Cities challenge policy checklist tool](../resources/gohsc-policy-indicator-checklist.xlsx).
+
+Metadata and data dictionaries are generated to accompany the data, along with reports in multiple languages.
+
+The resulting city-specific resources can be used to provide evidence to support policy makers and planners to strengthen urban policy, target interventions within cities, compare performance across cities, and when measured across time can be used to monitor progress towards achieving urban design goals for reducing inequities. Moreover, they provide a rich source of data for those advocating for disadvantaged and vulnerable community populations.
+
 Generated outputs include:
 
   - Summary of configuration parameters used for analysis (.yml file)
@@ -49,19 +49,19 @@ Generated outputs include:
   - Policy and spatial indicator report, optionally in multiple languages (.pdf)
   - Figures and maps, optionally in multiple languages (.jpg)
 
-It is designed to be used by local experts as part of a multi-disciplinary team participating in the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities); but anyone (e.g. students, enthusiasts) can use the open source software.
+The software is designed to be used by local experts as part of multi-disciplinary teams participating in the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities); but anyone (e.g. students, enthusiasts) can use the open source software.
 
 # How to set up and get started
 ## Usage in brief
 
-The Global Healthy and Sustainable Cities Indicators (GHSCI) tool can be run in a web browser or as Python code (e.g. in Jupyter Lab).  Once the software environment has been retrieved and running, analysis for a particular city proceeds in four steps:
+The Global Healthy and Sustainable Cities Indicators (GHSCI) tool can be run in a web browser or as Python code (e.g. in Jupyter Lab).  Once the software environment has been retrieved and is running, analysis for a particular city proceeds in four steps:
 
 1. [Configure](./#Configuration) study regions
 2. Perform region [analysis](./#Analysis)
 3. [Generate](./#Generate) resources
 4. [Compare](./#Compare) results (e.g. impact of hypothetical scenarios and sensitivity analyses, benchmarking between cities or regions of interest, monitoring change across time)
 
-A fully configured example study region is provided along with data for users to familiarise themselves with the workflow and the possibilities of the generated resources.  The instructions below will describe how to perform this analysis, and how to access, run and modify the provided example Jupyter notebook to perform analyses for your own study regions.
+A fully configured example study region is provided along with data for users to familiarise themselves with the workflow and the possibilities of the generated resources.  The instructions below will describe how to perform the analysis, and how to access, run and modify the provided example Jupyter notebook to perform analyses for your own study regions.
 
 ## Software set up
 
@@ -72,10 +72,14 @@ A fully configured example study region is provided along with data for users to
   - on MacOS/Linux in bash, enter 'bash ./global-indicators.sh'
     - Linux users may need to prefix this with 'sudo' for elevated permissions when launching Docker containers (read more [here](https://docs.docker.com/engine/install/linux-postinstall))
 
-This will retrieve the computational environment and launch the Global Healthy and Sustainable City Indicators (GHSCI) software, along with a PostGIS spatial database that is used for processing and data management.  Once launched, instructions will be displayed.
+This will retrieve the computational environment and launch the Global Healthy and Sustainable City Indicators (GHSCI) software, along with a PostGIS spatial database that is used for processing and data management.  Once launched, instructions will be displayed (Figure 2).
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/5192ad35-9418-4527-8e55-0316dec5bc62)
 *Figure 2. With Docker Desktop installed and running, run the global-indicators command to initialise the software environment and view usage instructions*
+
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=GvKASDN-XPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
 
 ## Running the software
 The software can be used to configure study regions, conduct analysis, generate resources and compare results in four ways, depending on preference:
@@ -83,11 +87,23 @@ The software can be used to configure study regions, conduct analysis, generate 
 ### Web app
 - To launch the app in your web browser, type `ghsci` and open the displayed URL in your web browser
 
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=QlsGSqIbb7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
+
 ### Jupyter Lab
 - To use a [Jupyter](https://jupyter.org/) Notebook, type `lab`, open the displayed URL in your web browser and double click to select the example notebook `example.ipynb` from the left-hand side browser pane
 
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=dOjbRDqgYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
+
 ### Command line
 - The basic shortcut commands `configure`, `analysis`, `generate` and `compare` can be run at the commandline in conjunction with a codename referring to your study region
+
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=x0YntNVmdTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
 
 ### Python
 - Optionally, the process can be run in Python, for example:
@@ -112,35 +128,60 @@ r.compare('another_previously_processed_codename')
 r.drop()
 
 # You will be asked if you really want to do this!  It requires entering "ghscic" to confirm
-# This doesn't remove any generated files or folders - you'll have to remove those yourself, if you want to
+# This doesn't remove any generated files or folders - you'll have to remove those yourself, if you want to.
 ```
+
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=FMr_acmcbLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
 
 ## Example analysis
 An example region fully configured with downloaded data has been provided for Las Palmas de Gran Canaria in Spain with a target year of 2023.  See the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml` to view configured settings and paths to data provided for this example city.  This section will demonstrate how to perform an analysis of this region, using the GHSCI graphical user interface app in your web browser.  The same example has also been provided as a Jupyter notebook (`example.ipynb`), that may be selected and opened from within [Jupyter Lab](./#Jupyter-Lab).
 
 From the launched software prompt, type `ghsci` to start the web app and click the displayed link to open a web browser at http://localhost:8080.
+
 ### Configuration
-The Global Healthy and Sustainable City Indicators app opens to a tab for selecting or creating a new study region.  We can see that the city of Las Palmas de Gran Canaria, Spain has been `Configured` but hasn't yet had analysis perormed or resources generated.   Once two configured regions have had their resources generated, they can be compared.  Additionally, the results of a completed [policy checklist](https://global-healthy-liveable-cities.github.io/indicators/#Policy-indicator-analysis) can be summarised and queried.
+The Global Healthy and Sustainable City Indicators app opens to a tab for selecting or creating a new study region (Figure 3).  We can see that the city of Las Palmas de Gran Canaria, Spain has been `Configured` but hasn't yet had analysis perormed or resources generated.   Once two configured regions have had their resources generated, they can be compared.  Additionally, the results of a completed [policy checklist](https://global-healthy-liveable-cities.github.io/indicators/#Policy-indicator-analysis) can be summarised and queried.
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/530f53fa-5989-48bf-8904-031faccb2225)
 *Figure 3. Create, search and view summary details for your study regions using the GHSCI web app interface before performing analysis, generating resources, running comparisons, or querying the results of a policy audit.*
+
 ### Analysis
-To run the example, click to select 'example_ES_Las_Palmas_2023' in the table, head to the `Analysis` tab and click the button.  While analysis is being conducted, progress will be summarised in the terminal.  This may take a few minutes to complete:
+To run the example, click to select 'example_ES_Las_Palmas_2023' in the table, head to the `Analysis` tab and click the button.  While analysis is being conducted, progress will be summarised in the terminal.  This may take a few minutes to complete (Figure 4).
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/ab5d2e51-4f94-459b-8fa4-212b46720373)
 *Figure 4. Performing analysis and generating resources will run code in the terminal window; view the outputs of these steps as they run to receive more information on what to do next.*
 
-Once completed, if you return to the 'Study regions' tab the study region summary will have the `Analysed` check box ticked and if you click to select the example in the table it will display the configured study region boundary on the map:
+Once completed, if you return to the 'Study regions' tab the study region summary will have the `Analysed` check box ticked and if you click to select the example in the table it will display the configured study region boundary on the map (Figure 5).
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/0d65bfb4-dcb8-4b9f-833e-cda12893034e)
-*Figure 4. The study region boundary can be visualised on a map.*
+*Figure 5. The study region boundary can be visualised on a map.*
 
 Click the study region to view a popup summary of the core set of indicators calculated (spatial distribution data will be generated shortly, and directions for producing an interactive map are provided in the example Jupyter notebook).
+
 ### Generate
-To generate the range of resources listed above, with the example city selected navigate to the `Generate` tab and click the `Generate resources` button.  A series of outputs generated will be reported in the terminal window:
+To generate the range of resources listed above, with the example city selected navigate to the `Generate` tab and click the `Generate resources` button.  A series of outputs generated will be reported in the terminal window (Figure 6), and can be located in the study region's [data output folder](./#Data-output-folder) (Figure 7).
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/1ccca037-49c7-49fa-aa0b-a9ca9ecfa003)
-*Figure 4. The list of generated resources is summarised in the terminal window, while a summary of core indicators for the region can be viewed on the interactive map.*
+*Figure 6. The list of generated resources is summarised in the terminal window, while a summary of core indicators for the region can be viewed on the interactive map.*
+
+![image](images/folder_process_data_output.jpg)
+*Figure 7. The list of generated folders and files following analysis and generating resources for a city.*
+
+A log file will be generated in the study region folder that can assist with debugging [if things go wrong](./#What-if-I-get-stuck), or otherwise verifying the process has been successful and let you see some of the details of how things are processed.  For the example city, this file is `__Las Palmas de Gran Canaria__example_ES_Las_Palmas_2023_processing_log.txt`.
+
+The file `_parameters.yml` contains a record of your project, region and data configurations that gave rise to the generated outputs.  Spatial features used in analysis as well as grid and overall city summaries are saved within a geopackage file, and CSV files of final summary results are provided too.  
+
+The PDF reports (Figures 8 and 9) are located within the folder `_web reports`, while the maps and images generated for use in that report (Figure 10) are located in the `figures` folder.
+
+![image](images/folder_process_data_output_reports.jpg)
+*Figure 8. PDF reports in English and Spanish for Las Palmas.*
+
+![image](images/folder_process_data_output_figures.jpg)
+*Figure 9. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
+
+![image](images/pdf_report.jpg)
+*Figure 10. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
 
 ### Compare 
 You can use the `Compare` function to
@@ -154,7 +195,7 @@ See the following section on sensitivity analyses for more details, including di
 ## Sensitivity analyses
 [Sensitivity analyses](https://en.wikipedia.org/wiki/Sensitivity_analysis) can be performed to evaluate the impact of important methodlogical decisions, such as the way in which a study region boundary has been defined.  In our example, we used an empirical definition of our study region's urban area.  This is important, because administrative boundaries are often broader expanses that may include industrial or rural areas with low or no usual resident population that may impede comparability if we sought to benchmark our results with another city; an empirical or external definition for what is 'urban' can help our results be more comparable.  The impact of this choice should be understood however, and depending on context and the needs of those who would use the indicator data and estimates produced, customisation of boundary definition may be required.
 
-As an example of a sensitivity analysis of the urban boundary used for analysis:
+To perform an example sensitivity analysis evaluating the impact of restricting analysis using an empirically identified urban area (Figure 11):
   - take a copy of the 'example_ES_Las_Palmas_2023.yml' file and save it as `ES_Las_Palmas_2023_test_not_urbanx`.
   - Open this file in a text editor and
     - modify the entry under study_region_boundary reading `ghsl_urban_intersection: true` to `ghsl_urban_intersection: false`
@@ -162,12 +203,12 @@ As an example of a sensitivity analysis of the urban boundary used for analysis:
   - now, exit the application (click the button in the top right hand corner) and restart the application
   - select the new region and perform the analysis and generate resources steps
   - select the `example_ES_Las_Palmas_2023` study region and navigate to the `Compare` tab
-  - select the `ES_Las_Palmas_2023_test_not_urbanx` region from the comparison drop down menu and click `Compare study regions` to generate a comparison CSV in the example study region's output folder (`process\data\_study_region_outputs\example_ES_Las_Palmas_2023`) and display a table with sideby side comparison of the overall region statistics and indicator estimates in the app window:
+  - select the `ES_Las_Palmas_2023_test_not_urbanx` region from the comparison drop down menu and click `Compare study regions` to generate a comparison CSV in the example study region's output folder (`process\data\_study_region_outputs\example_ES_Las_Palmas_2023`) and display a table with side-by-side comparison of the overall region statistics and indicator estimates in the app window:
 
 ![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/c95e1ab4-3d89-49a6-86cb-61718f83dde5)
-*Figure 5. A summary of core indicators can be generated; values are rounded for display purposes, but the comparison analysis also generates a dated CSV file located in the output folder of the selected reference region with un-rounded values.*
+*Figure 11. A summary of core indicators can be generated; values are rounded for display purposes, but the comparison analysis also generates a dated CSV file located in the output folder of the selected reference region with un-rounded values.*
 
-This technique can be used summarise the overall impacts of a range of choices and assumption relating to the choice of data and parameters to be used in analysis.  Users encouraged to also examine the generated spatial indicator layers using a Desktop GIS software like QGIS to evaluate the appropriateness of data inputs and the results that arise from their configuration of these.
+This technique can be used to summarise the overall impacts of a range of choices and assumptions relating to the choice of data and parameters to be used in analysis.  Users are encouraged to also examine the generated spatial indicator layers using a Desktop GIS software like QGIS to evaluate the appropriateness of data inputs and the results arising from how study regions have been configured.
 
 *Analogously, the same technique could be applied to compare the change in results when using data that has been modified to represent some kind of scenario or intervention and evaluate its impact on relevant urban indicators.*
 
@@ -177,81 +218,59 @@ This technique can be used summarise the overall impacts of a range of choices a
 A [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) tool has been developed to support the [1000 Cities Challenge](https://www.healthysustainablecities.org/1000cities). 
 For more information on the concepts underlying the tool, see: Lowe, M., Adlakha D., et al. (2022). City planning policies to support health and sustainability: an international comparison of policy indicators for 25 cities. The Lancet Global Health, May 2022. https://doi.org/10.1016/S2214-109X(22)00069-9.
 
-Once the policy checklist has been completed, the results can be summarised, queried and generated into a PDF report using the GHSCI web app:
-![image](images/policy_file_picker.jpg)
-*Figure 6. Select and load a completed policy indicator checklist*
+Once the policy checklist has been completed, the [results can be summarised, queried and generated into a PDF report](./#Policy-checklist-data) using the GHSCI web app (Figures 12 and 13).
+![image](images/policy_file_picker.jpg).
+*Figure 12. Select and load a completed policy indicator checklist*
 
 ![image](images/policy_report_summary.jpg)
-*Figure 7. Query a completed policy checklist for key phrases, and generate a summary PDF document*
+*Figure 13. Query a completed policy checklist for key phrases, and generate a summary PDF document*
+
+An example policy analysis has not yet been provided for Las Palmas.  The policy review instrument has recently been updated, and subsequent updates to the software will accommodate this in the reporting templates.
+
+## Monitoring progress
+
+Whichever way you choose to use the software, additional output will be displayed that can contain useful information about what is happening following configuration, analysis, generating resources and performing comparisons.  When using the web app, you may like to 'snap' the terminal window to the left of your screen and your web browser to the right to view both side-by-side.
+
+If anything goes wrong (e.g. you tried to run analysis for a city that hasn't been fully or correctly configured; see "[What if I get stuck](./#What-if-I-get-stuck)"), the process will stop and indicate some kind of error.  
 
 ## Command line usage
 
-- navigate to the folder where you extracted your software
-- enter `.\global-indicators` if using Windows, or `bash ./global-indicators.sh` if using Linux or MacOS.
+As an alternative to running the GHSCI software workflow using the [web app](./#Web-app) as demonstrated in the examples above, or [Jupyter Lab](./#Jupyter-Lab), users also have the option to initialise study region configurations, perform analyses, generate resources and comparisons using simple command-line arguments:
 
-Depending on the computer you’re using, this should result in a screen like this:
+Initialise a new study region by entering `configure` followed by a codename for your study region (e.g. `configure example_ES_Las_Palmas_2023`).  If the command is run without a codename, usage instructions will be displayed.  Once a new study region has been initialised, you will be directed to open the newly generated study region configuration file in a text editor and complete details for your city.  
 
-![image](images/0_run_ghscic.jpg)
-*Figure 8. Once you have Docker Desktop installed, run the software in a command line interface.*
+For now, we can proceed with analysis for the example city, [Las Palmas de Gran Canaria](https://en.wikipedia.org/wiki/Las_Palmas) using the provided example.  We refer to cities using [codenames](#Codenames) to avoid ambiguity when identifying study regions.  For example, you may want to analyse Las Palmas in both 2023 as well as 2024; or you may be interested in Valencia in Venezuela  (e.g. VE_Valencia_2023) as well as Valencia in Spain (ES_Valencia_2023). For Las Palmas, we use the codename `example_ES_Las_Palmas_2023`. 
 
-If you’ve got this far successfully, it means that Docker has retrieved the required computational environment and dependencies for running our software and launched it in a ‘container’.  This is a bit like an isolated virtual Linux computer, which helps our software run regardless of each user’s different computer context (operating system, software etc).  It also launches a PostGIS spatial database container in the background too, which helps with the processing and data management in the background.
-
-If you look at the contents of this folder, either by typing ‘dir’ or in a file explorer application, you’ll see there are three scripts (files ending in .py) corresponding to those mentioned in the Usage in Brief section above:
-
-The first step is run by entering `configure`.  This will initialise a set of configuration files in the configuration folder, and will advise you to edit these as required.  For now, we can leave them as they are and proceed with the example city, [Las Palmas de Gran Canaria](https://en.wikipedia.org/wiki/Las_Palmas).
-
-The second step is to analyse a region, drawing on the data that you have retrieved and stored in the data subfolders and configured in the region and datasets configuration files.  For our example city, this done by entering, `analysis example_ES_Las_Palmas_2023`.  The last bit (`example_ES_Las_Palmas_2023`) is just a code name we have used to refer to Las Palmas, defined in our region configuration file.  We use a code name instead of a city’s actual name because it can avoid ambiguity.   For example, you may want to analyse Las Palmas in both 2023 as well as 2024; or you may be interested in Valencia in Venezuela  (e.g. VE_Valencia_2023) as well as Valencia in Spain (ES_Valencia_2023).  
-
-To see the list of codenames for configured cities, run the script without providing a codename and it will let you know this, as well as a reminder for how to run the process overall.
+To see the list of codenames for configured cities (Figure 14), enter the commands `configure`, `analysis` or `generate` without providing a codename.  For more detailed help on these commands, enter `help`.
 
 ![image](images/2a_list_codenames.jpg)
-*Figure 9. The codenames for configured cities can be viewed by running `analysis`.*
+*Figure 14. The codenames for configured cities can be viewed by running `analysis`.*
 
-Or, run it with a codename for a fully configured city (e.g. `example_ES_Las_Palmas_2023`, Las Palmas, for which data has been provided) and it will proceed to analyse the city:
+An analysis can now be performed (Figure 15), drawing on the study region configuration file that summarises locations and details for the data that you have retrieved and stored in the data subfolders.  For our example city, enter, `analysis example_ES_Las_Palmas_2023`.  
 
 ![image](images/2b_analyse_regions.jpg)
-*Figure 10. Running neighbourhood analysis for Las Palmas by entering `analysis example_ES_Las_Palmas_2023.py`.*
+*Figure 15. Running neighbourhood analysis for Las Palmas by entering `analysis example_ES_Las_Palmas_2023.py`.*
 
-Finally, you can generate a report by entering `generate example_ES_Las_Palmas_2023` (or the codename for another city, once you source its data, configure it and analyse it):
+Resources including maps, figures and reports can be generated by entering `generate example_ES_Las_Palmas_2023` (or the codename for another city, once you source its data, initialise and complete its configuration, and complete the analysis process; Figure 16). 
 
 ![image](images/3_generate_resources.jpg)
-*Figure 11. The output of successful report generation for Las Palmas, which also provides the path to find the output PDF file(s).*
+*Figure 16. The output of successful report generation for Las Palmas, which also provides the path to find the output PDF file(s).*
 
-Once you’ve successfully run the process, output files will be located for the analysed city or region in an output folder (e.g. `process\data\_study_region_outputs\example_ES_Las_Palmas_2023`, located within your project directory):
-
-![image](images/folder_process_data_output.jpg)
-*Figure 12. The list of output files and folders resulting from running the full 3-step process; these are explained later in this guide.*
-
-If anything goes wrong (e.g. you tried to run any of the other cities, for which data haven’t been provided), the process will stop and indicate some kind of error.  A log file will be generated in the study region folder that can assist with debugging, or otherwise verifying the process has been successful and let you see some of the details of how things are processed (we’ll go into details later).  In the above screenshot this is called `__Las Palmas de Gran Canaria__example_ES_Las_Palmas_2023_processing_log.txt`.
-
-As a record for how you ran your analysis, the file `_parameters.yml` contains a record of your project, region and data configurations for this region.  Spatial features used in analysis as well as grid and overall city summaries are saved within a geopackage file, and CSV files of final summary results are provided too.  The PDF reports are located within the folder `_web reports`, while the maps and images generated for use in that report are located in the `figures` folder.
-
-![image](images/folder_process_data_output_figures.jpg)
-*Figure 13. Generated plot and map figures from the analysis of Las Palmas, with annotations in English and Spanish.*
-
-![image](images/folder_process_data_output_reports.jpg)
-*Figure 14. PDF reports in English and Spanish for Las Palmas.*
-
-![image](images/pdf_report.jpg)
-*Figure 15. Example page from the Spanish PDF policy and spatial indicators report for Las Palmas (policy results have not been completed and are are included for illustration purposes only).*
-
-**Note that an example policy analysis has not been provided for Las Palmas.  The policy review instrument has been updated, and subsequent updates to the software will accommodate this in the reporting templates.**
 
 # Details
+Additional general information on configuration, analysis, reporting and comparison steps using the GHSCI software is provided below, including guidance on [what to do if you get stuck](./#What-if-I-get-stuck).
+
 ## Configuration
 ### Study regions
 Before commencing analysis, your study regions will need to be configured with details of your downloaded data, the metadata used to document this data, and parameters to guide the software's usage of this data in analyses.
 
 The configuration files are text files using the [YAML](https://yaml.org/) (.yml) format.  They can be opened and modified using a text editor to define region specific details, including which datasets are being used, where they were sourced from, and how they should be interpreted.  Region configuration files are located within the `configuration/regions` sub-folder. An example region configuration for Las Palmas de Gran Canaria (for which data supporting analysis is included) has been provided in the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml`.  This can also be viewed online [here](https://github.com/global-healthy-liveable-cities/global-indicators/blob/main/process/configuration/regions/example_ES_Las_Palmas_2023.yml).  At the top of the configuration file are some instructions that describe how to understand and modify the file.
 
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
 
-Information on generating the required configuration files (further detailed below), enter `configure` at the command line,  or using Python:
-```
-from subprocesses import ghsci
-ghsci.configure()
-```
-
-New regions can be added or their analysis modified by adding to and editing the regions/_codename_.yml file, in conjunction with the datasets.yml file.  
+New regions can be added by using the `configuration` utility functions described elsewhere that initialise a new region configuration file using a city [codename](./#Codenames) at `process/configuration/regions/_codename_.yml`.  This file can be edited using a text editor, or within [Jupyter Lab](./#Jupyter-Lab).
 
 **Study region template**
 <details>
@@ -924,22 +943,22 @@ reporting:
 
 
 ### Codenames
-Region configuration files are named using a codename to represent city when used in processing, for example `example_ES_Las_Palmas_2023`.  This helps to avoid issues with ambiguity when analysing multiple cities across different regions and time points (e.g. cities named Valencia are found in both Spain and Venezuala). In the case of our example city, we have used 'example' to provide a clarification about the study region's purpose, 'ES' clarifies that this is a Spanish city, 'Las_Palmas' is a common short way of writing the city's name, and the analysis is designed to target 2023 (i.e. it uses data sources published then). 
+Region configuration files are named using a codename to represent a city when used in processing, for example `example_ES_Las_Palmas_2023`.  This helps to avoid issues with ambiguity when analysing multiple cities across different regions and time points (e.g. cities named Valencia are found in both Spain and Venezuala). In the case of our example city, we have used 'example' to provide a clarification about the study region's purpose, 'ES' clarifies that this is a Spanish city, 'Las_Palmas' is a common short way of writing the city's name, and the analysis is designed to target 2023, using data sources that could be reasonably assumed to provide a fair representation for the city at that time point. 
 
 ### Initialising
 
-To initialise a new study region configuration file, you can run `configure <codename>` (e.g. `configure example_ES_Las_Palmas_2023`; this would advise you that the Las Palmas example study region configuration has already been initialised, and suggest how to run analyses for it).  
+To initialise a new study region configuration file, you can run use the [Web app]() study region form, [Jupyter Lab](./#Jupyter-Lab) or Python (see example below), or command line (`configure <codename>`; Figure 17).  Running the configuration step for a study region with a previously initialised configuration file (e.g. `configure example_ES_Las_Palmas_2023`) would advise that the study region configuration has already been initialised, and provide guidance on how to run analyses once configuration has been completed by the user using a text editor.  
 
 ![image](images/1_create_project_configuration_files.jpg)
-*Figure 16. Output resulting from creating the configuration files; if you were to run this a second time after successfully running it, it would recognise and report that the files already exist, and otherwise remind you about the purpose of the respective configuration files.*
+*Figure 17. Output resulting from creating the configuration files; if you were to run this a second time after successfully running it, it would recognise and report that the files already exist, and otherwise remind you about the purpose of the respective configuration files.*
 
-Alternatively, you can initialise a configuration file using Python, for example for the Australian city of Melbourne with a target time point of 2023:
+Alternatively, you can initialise a configuration file using Python (including using a Jupyter notebook), for example for the Australian city of Melbourne with a target time point of 2023:
 ```
 from subprocesses import ghsci
 r = ghsci.Region('AU_Melbourne_2023')
 ```
 
-Once initialised, study region configuration files must then be modified using a text editor to provide information on data and analysis parameters as required.   
+Once initialised, study region configuration files must then be modified using a text editor to provide information on the locations of downloaded data and analysis parameters as required.   
 
 *A good way to view and edit the configuration files is using the provided [Jupyter Lab](./#Jupyter-Lab) interface.*
 
@@ -970,7 +989,9 @@ Optionally, projects can be configured to:
 
 
 ## Data
-When configuring new study region(s), some input data will be required.  This is to be stored in sub-folders within the `process/data` folder. Examples of required data include a population grid, an excerpt from OpenStreetMap, and a study region boundary (either an administrative boundary, or an urban region from the Global Human Settlements Urban Centres Database).  Other data are optional: for example, custom boundaries for aggregation (see example), GTFS transit feed data, or a policy review analysis.  The kinds of data that can be configured for usage are summarised in the below table, and we have provided examples for each of these for Las Palmas (noting that we have not conducted a policy review for Las Palmas yet).
+When configuring new study region(s), some input data will be required.  This is to be stored in sub-folders within the `process/data` folder. Examples of required data include a population grid, an excerpt from OpenStreetMap, and a study region boundary (either an administrative boundary, or an urban region from the Global Human Settlements Urban Centres Database).  Other data are optional: for example, custom boundaries for aggregation (see example), GTFS transit feed data, or a completed policy checklist.  
+
+The kinds of data that can be configured for usage are summarised in the below table.  We have provided examples for each of these for Las Palmas, with the exception at the time of writing of a completed policy checklist.
 
 |Usage note    | Data sub-folder     | Purpose        |
 |--------------|--------------------|----------------|
@@ -1122,9 +1143,13 @@ Florczyk A., Corbane C,. Schiavina M., Pesaresi M., Maffenini L., Melchiorri, M.
 GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R2019A. European Commission, Joint Research Centre (JRC)PID: https://data.jrc.ec.europa.eu/dataset/53473144-b88c-44bc-b4a3-4583ed1f547e
 
 
-### Policy review data
+### Policy checklist data
 
-The global-indicators software has been designed to report on both policy and spatial indicator results.  The integration of policy results is in development, and pending an updated policy review survey instrument.  The beta implementation has been carried out using the policy review analysis used in the 25-city study published in 2022, and draft templates are available on request.  It is anticipated that the updated policy review instrument will be incorporated for reporting purposes later in 2023.  In the meantime, an example set of policy data from the 25 city study has been provided to provide an indication of how this can be used to generate a city report containing policy checklists.
+The global-indicators software has been designed to report on both policy and spatial indicator results.  Once the [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) has been completed for a city, save this in the project data folder (e.g. within `data/policy_review`).  Using the GHSCI [web app](./#Web-app) interface you can now select this completed file to view, query and generate a PDF summary report. 
+
+{% raw %}
+<iframe width="768" height="432" src="https://www.youtube.com/watch?v=QlsGSqIbb7M&t=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endraw %}
 
 ### GTFS transit feed data
 
@@ -1186,15 +1211,9 @@ However, in most cases the `route_type` values for a feed (found in the `routes.
 
 ### Data output folder
 
-The results of analyses will be output to study region specific sub-folders within the `data/_study_region_outputs` directory
+Generated resources are saved to study region specific [codename](./#Codenames) sub-folders within the `data/_study_region_outputs` directory.
 
-The sub-folders have a naming schema reflecting the convention:
-
-[city code name]_[2-letter country code]_[yyyy]
-
-For example, ghent_be_2020 or valencia_v2_es_2020.
-
-Following completion of successful processing of a study region, the following provides an indication of the contents of this folder (italics indicate a parameter that will vary depending on configuration):
+The following provides an indicative list of the contents of this folder (italics indicate a word that will vary depending on configuration):
 
 |Item                                                            | Type | Description |
 |----------------------------------------------------------------|------|-------------|
@@ -1215,12 +1234,6 @@ Following completion of successful processing of a study region, the following p
 |poly_*codename*.poly | text file| A polygon boundary file; this is generated for the buffered urban region of interest as per configuration in regions/_codename_.yml, and is used to excerpt a portion of OpenStreetMap for this region from the configured input data|
 |population\_*resolution*\_*codename*\_*project epsg code*.tif | TIF file| A population raster for this buffered study region, excerpted from the input data, in the projects coordinate reference system |
 |population\_*resolution*\_*codename*\_*source crs*.tif| TIF file| A population raster for this buffered study region, excerpted from the input data, in the coordinate reference system of the input population data (e.g. Mollweide, in the case of the recommended GHS-POP data) |
-
-Optionally, projects can be configured to:
-
-- analyse [GTFS feed data](https://database.mobilitydata.org/) for evaluating accessibility to regularly serviced public transport
-- use custom sets of OpenStreetMap tags for identifying destinations (see [OpenStreetMap TagInfo](https://taginfo.openstreetmap.org/) and region-specific tagging guidelines to inform relevant synonyms for points of interest)
-- use custom destination data (a path to CSV with coordinates for points of interest for different destination categories can be configured in `process/configuration/regions/_codename_.yml`)
 
 # Frequently Asked Questions
 

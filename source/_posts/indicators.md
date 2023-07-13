@@ -2,7 +2,7 @@
 title: Policy and spatial indicators for healthy and sustinable cities
 date: 2023-02-01
 ---
-The theoretical framework for our policy and spatial indicators for healthy and sustainabl cities was outlined in the [*Lancet Global Health* Series on Urban Design, Transport and Planning](https://www.thelancet.com/series/urban-design-2022).
+The theoretical framework for our policy and spatial indicators for healthy and sustainable cities was outlined in the [*Lancet Global Health* Series on Urban Design, Transport and Planning](https://www.thelancet.com/series/urban-design-2022).
 
 # 'The 11 Ds' framework
 Giles-Corti, B. et al. (2022). Creating healthy and sustainable cities: what gets measured, gets done. The Lancet Global Health, May 2022. https://doi.org/10.1016/S2214-109X(22)00070-5
