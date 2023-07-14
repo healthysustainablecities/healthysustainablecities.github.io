@@ -12,7 +12,7 @@ The software can be configured to support comparisons within- and between-cities
 *Figure 1. The GHSCI tool can be used to create and report on policy and spatial indicators for cities around the world from your web browser, or optionally as code, a Jupyter notebook, or from command line*
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/videoseries?list=PLOllH2OXS1IYpZj6TXlYfdmAcuGUln1Jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/videoseries?list=PLOllH2OXS1IYpZj6TXlYfdmAcuGUln1Jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ## What does this do?
@@ -76,7 +76,7 @@ This will retrieve the computational environment and launch the Global Healthy a
 *Figure 2. With Docker Desktop installed and running, run the global-indicators command to initialise the software environment and view usage instructions*
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/GvKASDN-XPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/GvKASDN-XPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ## Running the software
@@ -86,21 +86,21 @@ The software can be used to configure study regions, conduct analysis, generate 
 - To launch the app in your web browser, type `ghsci` and open the displayed URL in your web browser
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Jupyter Lab
 - To use a [Jupyter](https://jupyter.org/) Notebook, type `lab`, open the displayed URL in your web browser and double click to select the example notebook `example.ipynb` from the left-hand side browser pane
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/dOjbRDqgYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/dOjbRDqgYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Command line
 - The basic shortcut commands `configure`, `analysis`, `generate` and `compare` can be run at the commandline in conjunction with a codename referring to your study region
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/x0YntNVmdTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/x0YntNVmdTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### Python
@@ -130,7 +130,7 @@ r.drop()
 ```
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/FMr_acmcbLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/FMr_acmcbLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ## Example analysis
@@ -265,7 +265,7 @@ Before commencing analysis, your study regions will need to be configured with d
 The configuration files are text files using the [YAML](https://yaml.org/) (.yml) format.  They can be opened and modified using a text editor to define region specific details, including which datasets are being used, where they were sourced from, and how they should be interpreted.  Region configuration files are located within the `configuration/regions` sub-folder. An example region configuration for Las Palmas de Gran Canaria (for which data supporting analysis is included) has been provided in the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml`.  This can also be viewed online [here](https://github.com/global-healthy-liveable-cities/global-indicators/blob/main/process/configuration/regions/example_ES_Las_Palmas_2023.yml).  At the top of the configuration file are some instructions that describe how to understand and modify the file.
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 New regions can be added by using the `configuration` utility functions described elsewhere that initialise a new region configuration file using a city [codename](./#Codenames) at `process/configuration/regions/_codename_.yml`.  This file can be edited using a text editor, or within [Jupyter Lab](./#Jupyter-Lab).
@@ -1146,7 +1146,7 @@ GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R
 The global-indicators software has been designed to report on both policy and spatial indicator results.  Once the [policy checklist](../resources/gohsc-policy-indicator-checklist.xlsx) has been completed for a city, save this in the project data folder (e.g. within `data/policy_review`).  Using the GHSCI [web app](./#Web-app) interface you can now select this completed file to view, query and generate a PDF summary report. 
 
 {% raw %}
-<iframe width="768" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M?start=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="432" src="https://www.youtube.com/embed/QlsGSqIbb7M?start=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endraw %}
 
 ### GTFS transit feed data
