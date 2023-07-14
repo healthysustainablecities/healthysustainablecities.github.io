@@ -188,7 +188,7 @@ You can use the `Compare` function to
 - compare results for the same study region across time (monitoring)
 - evaluate the impact of hypothetical scenarios or interventions through analysis of modified data to represent these
 
-See the following section on sensitivity analyses for more details, including direction on preforming an example evaluation of the impact of choice of the study region boundary urban region used in analysis.
+The following section provides an example of how the `compare` functionality of the GHSCI tool can be used to evaluate aspects such as those listed above.
 
 ## Sensitivity analyses
 [Sensitivity analyses](https://en.wikipedia.org/wiki/Sensitivity_analysis) can be performed to evaluate the impact of important methodlogical decisions, such as the way in which a study region boundary has been defined.  In our example, we used an empirical definition of our study region's urban area.  This is important, because administrative boundaries are often broader expanses that may include industrial or rural areas with low or no usual resident population that may impede comparability if we sought to benchmark our results with another city; an empirical or external definition for what is 'urban' can help our results be more comparable.  The impact of this choice should be understood however, and depending on context and the needs of those who would use the indicator data and estimates produced, customisation of boundary definition may be required.
