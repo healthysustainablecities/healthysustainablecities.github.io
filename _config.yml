@@ -110,6 +110,7 @@ theme_config:
 deploy:
   - type: git
     repo: https://github.com/global-healthy-liveable-cities/global-healthy-liveable-cities.github.io
+    branch: gh-pages
   - type: git
     repo: https://github.com/healthysustainablecities/healthysustainablecities.github.io.git
-  branch: gh-pages
+    branch: gh-pages
