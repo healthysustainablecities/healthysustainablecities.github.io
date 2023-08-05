@@ -108,6 +108,8 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/global-healthy-liveable-cities/global-healthy-liveable-cities.github.io
+  - type: git
+    repo: https://github.com/global-healthy-liveable-cities/global-healthy-liveable-cities.github.io
+  - type: git
+    repo: https://github.com/healthysustainablecities/healthysustainablecities.github.io.git
   branch: gh-pages
