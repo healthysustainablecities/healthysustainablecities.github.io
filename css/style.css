@@ -735,6 +735,14 @@ body {
 #header-post #menu-icon:hover {
   color: #2bbc8a;
 }
+#header-post #menu-icon-tablet {
+  float: right;
+  margin-right: 2rem;
+  margin-left: 15px;
+}
+#header-post #menu-icon-tablet:hover {
+  color: #2bbc8a;
+}
 #header-post #top-icon-tablet {
   position: fixed;
   right: 2rem;
@@ -845,11 +853,6 @@ body {
 }
 #header-post #toc .toc-number {
   display: none;
-}
-@media screen and (min-width: 900px) {
-  #header-post #top-icon-tablet {
-    display: none !important;
-  }
 }
 @media screen and (min-width: 1199px) {
   #header-post #actions {
