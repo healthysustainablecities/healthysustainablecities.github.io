@@ -16,7 +16,7 @@ timezone: 'Australia/Melbourne'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://global-healthy-liveable-cities.github.io
+url: https://healthysustainablecities.github.io
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -109,8 +109,8 @@ theme_config:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repo: https://github.com/global-healthy-liveable-cities/global-healthy-liveable-cities.github.io
+    repo: https://github.com/healthysustainablecities/healthysustainablecities.github.io.git
     branch: gh-pages
   - type: git
-    repo: https://github.com/healthysustainablecities/healthysustainablecities.github.io.git
+    repo: https://github.com/global-healthy-liveable-cities/global-healthy-liveable-cities.github.io
     branch: gh-pages

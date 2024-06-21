@@ -1,14 +1,14 @@
 ---
-title: Global Healthy & Sustinable City Indicators software
+title: Global Healthy & Sustainable City Indicators software
 date: 2023-07-03
 author: GHSCI
 ---
 # Overview
-The [Global Healthy and Sustainable City Indicators (GHSCI, or global-indicators) software](https://github.com/global-healthy-liveable-cities/global-indicators) is an open-source tool for measuring, monitoring and reporting on policy and spatial urban indicators for healthy, sustainable cities worldwide using open or custom data. Designed to support participation in the Global Observatory of Healthy and Sustainable Cities' 1000 city challenge, it can be run as code or as an app in your web browser.
+The [Global Healthy and Sustainable City Indicators (GHSCI, or global-indicators) software](https://github.com/healthysustainablecities/global-indicators) is an open-source tool for measuring, monitoring and reporting on policy and spatial urban indicators for healthy, sustainable cities worldwide using open or custom data. Designed to support participation in the Global Observatory of Healthy and Sustainable Cities' 1000 city challenge, it can be run as code or as an app in your web browser.
 
 The software can be configured to support comparisons within- and between-cities and across time, benchmarking, analysis and monitoring of local policies, tracking progress, and inform interventions towards achieving healthy, equitable and sustainable cities (Figure 1). It also supports generating resources including maps, figures and reports in multiple languages, so these can be made accessible for use by local communities and stakeholders as a source of evidence to advocate for change.
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/6f7d9c8a-47b2-496f-983b-820f5e86d0b5)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/6f7d9c8a-47b2-496f-983b-820f5e86d0b5)
 *Figure 1. The GHSCI tool can be used to create and report on policy and spatial indicators for cities around the world from your web browser, or optionally as code, a Jupyter notebook, or from command line*
 
 {% raw %}
@@ -20,9 +20,9 @@ The software can be configured to calculate and report on policy and spatial ind
 
 The default core set of spatial urban indicators calculated includes:
 
-- Urban area in square kilometers
+- Urban area in square kilometres
 - Population density (persons per square kilometre)
-- Street connectivity (intersections per square kilometer)
+- Street connectivity (intersections per square kilometre)
 - Access to destinations within 500 meters:
     - a supermarket
     - a convenience store
@@ -63,7 +63,7 @@ A fully configured example study region is provided along with data for users to
 
 ## Software set up
 
-- Download and unzip the [GHSCI software](https://github.com/global-healthy-liveable-cities/global-indicators/archive/refs/heads/main.zip) to a desired project directory on your computer
+- Download and unzip the [GHSCI software](https://github.com/healthysustainablecities/global-indicators/archive/refs/heads/main.zip) to a desired project directory on your computer
 - Install and run [Docker Desktop](https://docs.docker.com/desktop/) according to the guidelines for your operating system of choice
 - Run the GHSCI software by opening the project directory where you extracted the software using a command line interface (e.g.  [Terminal](https://aka.ms/terminal) on Windows, [Terminal](https://support.apple.com/en-au/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac) on MacOS, or [Bash](https://www.gnu.org/software/bash/) on Linux):
   - on Windows open the folder in Terminal or cmd.exe and enter '.\global-indicators.bat'
@@ -72,7 +72,7 @@ A fully configured example study region is provided along with data for users to
 
 This will retrieve the computational environment and launch the Global Healthy and Sustainable City Indicators (GHSCI) software, along with a PostGIS spatial database that is used for processing and data management.  Once launched, instructions will be displayed (Figure 2).
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/5192ad35-9418-4527-8e55-0316dec5bc62)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/5192ad35-9418-4527-8e55-0316dec5bc62)
 *Figure 2. With Docker Desktop installed and running, run the global-indicators command to initialise the software environment and view usage instructions*
 
 {% raw %}
@@ -107,7 +107,7 @@ The software can be used to configure study regions, conduct analysis, generate 
 - Optionally, the process can be run in Python, for example:
 
 ```{python}
-from subprocesses import ghsci
+import ghsci
 # set a codename for your city; here is the codename for the provided example
 codename = 'example_ES_Las_Palmas_2023'
 
@@ -139,20 +139,20 @@ An example region fully configured with downloaded data has been provided for La
 From the launched software prompt, type `ghsci` to start the web app and click the displayed link to open a web browser at http://localhost:8080.
 
 ### Configuration
-The Global Healthy and Sustainable City Indicators app opens to a tab for selecting or creating a new study region (Figure 3).  We can see that the city of Las Palmas de Gran Canaria, Spain has been `Configured` but hasn't yet had analysis perormed or resources generated.   Once two configured regions have had their resources generated, they can be compared.  Additionally, the results of a completed [policy checklist](https://global-healthy-liveable-cities.github.io/indicators/#Policy-indicator-analysis) can be summarised and queried.
+The Global Healthy and Sustainable City Indicators app opens to a tab for selecting or creating a new study region (Figure 3).  We can see that the city of Las Palmas de Gran Canaria, Spain has been `Configured` but hasn't yet had analysis perormed or resources generated.   Once two configured regions have had their resources generated, they can be compared.  Additionally, the results of a completed [policy checklist](https://healthysustainablecities.github.io/indicators/#Policy-indicator-analysis) can be summarised and queried.
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/530f53fa-5989-48bf-8904-031faccb2225)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/530f53fa-5989-48bf-8904-031faccb2225)
 *Figure 3. Create, search and view summary details for your study regions using the GHSCI web app interface before performing analysis, generating resources, running comparisons, or querying the results of a policy audit.*
 
 ### Analysis
 To run the example, click to select 'example_ES_Las_Palmas_2023' in the table, head to the `Analysis` tab and click the button.  While analysis is being conducted, progress will be summarised in the terminal.  This may take a few minutes to complete (Figure 4).
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/ab5d2e51-4f94-459b-8fa4-212b46720373)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/ab5d2e51-4f94-459b-8fa4-212b46720373)
 *Figure 4. Performing analysis and generating resources will run code in the terminal window; view the outputs of these steps as they run to receive more information on what to do next.*
 
 Once completed, if you return to the 'Study regions' tab the study region summary will have the `Analysed` check box ticked and if you click to select the example in the table it will display the configured study region boundary on the map (Figure 5).
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/0d65bfb4-dcb8-4b9f-833e-cda12893034e)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/0d65bfb4-dcb8-4b9f-833e-cda12893034e)
 *Figure 5. The study region boundary can be visualised on a map.*
 
 Click the study region to view a popup summary of the core set of indicators calculated (spatial distribution data will be generated shortly, and directions for producing an interactive map are provided in the example Jupyter notebook).
@@ -160,7 +160,7 @@ Click the study region to view a popup summary of the core set of indicators cal
 ### Generate
 To generate the range of resources listed above, with the example city selected navigate to the `Generate` tab and click the `Generate resources` button.  A series of outputs generated will be reported in the terminal window (Figure 6), and can be located in the study region's [data output folder](./#Data-output-folder) (Figure 7).
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/1ccca037-49c7-49fa-aa0b-a9ca9ecfa003)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/1ccca037-49c7-49fa-aa0b-a9ca9ecfa003)
 *Figure 6. The list of generated resources is summarised in the terminal window, while a summary of core indicators for the region can be viewed on the interactive map.*
 
 ![image](images/folder_process_data_output.jpg)
@@ -203,7 +203,7 @@ To perform an example sensitivity analysis evaluating the impact of restricting 
   - select the `example_ES_Las_Palmas_2023` study region and navigate to the `Compare` tab
   - select the `ES_Las_Palmas_2023_test_not_urbanx` region from the comparison drop down menu and click `Compare study regions` to generate a comparison CSV in the example study region's output folder (`process\data\_study_region_outputs\example_ES_Las_Palmas_2023`) and display a table with side-by-side comparison of the overall region statistics and indicator estimates in the app window:
 
-![image](https://github.com/global-healthy-liveable-cities/global-indicators/assets/12984626/c95e1ab4-3d89-49a6-86cb-61718f83dde5)
+![image](https://github.com/healthysustainablecities/global-indicators/assets/12984626/c95e1ab4-3d89-49a6-86cb-61718f83dde5)
 *Figure 11. A summary of core indicators can be generated; values are rounded for display purposes, but the comparison analysis also generates a dated CSV file located in the output folder of the selected reference region with un-rounded values.*
 
 This technique can be used to summarise the overall impacts of a range of choices and assumptions relating to the choice of data and parameters to be used in analysis.  Users are encouraged to also examine the generated spatial indicator layers using a Desktop GIS software like QGIS to evaluate the appropriateness of data inputs and the results arising from how study regions have been configured.
@@ -262,7 +262,7 @@ Additional general information on configuration, analysis, reporting and compari
 ### Study regions
 Before commencing analysis, your study regions will need to be configured with details of your downloaded data, the metadata used to document this data, and parameters to guide the software's usage of this data in analyses.
 
-The configuration files are text files using the [YAML](https://yaml.org/) (.yml) format.  They can be opened and modified using a text editor to define region specific details, including which datasets are being used, where they were sourced from, and how they should be interpreted.  Region configuration files are located within the `configuration/regions` sub-folder. An example region configuration for Las Palmas de Gran Canaria (for which data supporting analysis is included) has been provided in the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml`.  This can also be viewed online [here](https://github.com/global-healthy-liveable-cities/global-indicators/blob/main/process/configuration/regions/example_ES_Las_Palmas_2023.yml).  At the top of the configuration file are some instructions that describe how to understand and modify the file.
+The configuration files are text files using the [YAML](https://yaml.org/) (.yml) format.  They can be opened and modified using a text editor to define region specific details, including which datasets are being used, where they were sourced from, and how they should be interpreted.  Region configuration files are located within the `configuration/regions` sub-folder. An example region configuration for Las Palmas de Gran Canaria (for which data supporting analysis is included) has been provided in the file `process/configuration/regions/example_ES_Las_Palmas_2023.yml`.  This can also be viewed online [here](https://github.com/healthysustainablecities/global-indicators/blob/main/process/configuration/regions/example_ES_Las_Palmas_2023.yml).  At the top of the configuration file are some instructions that describe how to understand and modify the file.
 
 {% raw %}
 <iframe width="100%" height="432" src="https://www.youtube.com/embed/W9iHHTBHC2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -278,7 +278,7 @@ New regions can be added by using the `configuration` utility functions describe
 
 ```
 ###########################################################
-## Study region configuration template v4.2.2 (27 June 2023)
+## Study region configuration template v5.0.0 (3 Apri 2024)
 
 ## This configuration file uses the YAML format (https://yaml.org/) to describe the data sources, parameters and metadata used to analyse and generate urban indicator resources using the Global Healthy and Sustainable City Indicators software (https://global-healthy-liveable-cities.github.io/).
 
@@ -306,13 +306,13 @@ country:
 country_code:
 ## Continent name, e.g. Europe
 continent:
-## coordinate reference system (CRS) metadata
+## Projected coordinate reference system (CRS) metadata
 crs:
-    ## name of the coordinate reference system (CRS), e.g. REGCAN95 / LAEA Europe
+    ## name of the projected (i.e. units in metres) coordinate reference system (CRS), e.g. REGCAN95 / LAEA Europe
     name:
     ## acronym of the standard catalogue defining this CRS, eg. EPSG
     standard:
-    ## spatial reference identifier (SRID) integer that identifies this CRS according to the specified standard, e.g. 5635 (see https://spatialreference.org/, or search for what is commonly used in your city or country; e.g. a national CRS like those listed at https://en.wikipedia.org/wiki/List_of_national_coordinate_reference_systems )
+    ## Projected CRS spatial reference identifier (SRID) integer that identifies this CRS according to the specified standard, e.g. 5635 (see https://spatialreference.org/, or search for what is commonly used in your city or country; e.g. a national CRS like those listed at https://en.wikipedia.org/wiki/List_of_national_coordinate_reference_systems )
     srid:
 ## Study region boundary metadata
 study_region_boundary:
@@ -322,7 +322,9 @@ study_region_boundary:
     ## e.g. to use the urban region and urban query specified elsewhere in this configuration file:
     ## urban_query
     ## e.g. to query an attribute for a specific layer in a geopackage
-    ## region_boundaries/your_geopackage.gpkg:layer_name -where some_attribute=="some_value" # to
+    ## region_boundaries/your_geopackage.gpkg:layer_name -where "some_attribute=='some_value'"
+    ## e.g. to query an attribute for a specific layer in a shapefile
+    ## region_boundaries/your_shapefile.shp -where "some_attribute=='some_value'"
     data:
     ## The name of the provider of this data, e.g. Centro Nacional de Información Geográfica
     source:
@@ -371,10 +373,10 @@ study_region_boundary:
 population:
     ## name of the population data
     name: "Global Human Settlements population data: 2020, Mollweide (EU JRC, 2022)"
-    ## path relative to project data directory to folder contining tifs, or to vector file
-    data_dir: population_grids/Example/GHS_POP_E2020_GLOBE_R2022A_54009_100_V1_0_R6_C17
-    ## type of data (e.g. "raster:Int64" or "vector")
-    data_type: raster:Int64
+    ## path relative to project data directory to folder containing tifs, or to vector file
+    data_dir:
+    ## type of data (e.g. "raster:Int64" or "vector");  e.g. for GHSL-POP, raster:Int64
+    data_type:
     ###########
     ## Vector data specific-fields; uncomment if using vector data (e.g. shp, geojson, gpkg)
     ## The column field with population estimates for your population group of interest (may be total, or for a sub-group of interest to be the focus of your indicators)
@@ -384,19 +386,22 @@ population:
     ###########
     ###########
     ## Raster data specific-fields; comment out if using raster data (i.e. tif)
-    ## image resolution, e.g. 100 m
-    resolution: 100m
+    ## image resolution;  e.g. for GHSL-POP with 100 metre resolution, 100m
+    resolution:
     ## the image band containing the relevant data, e.g. for GHSL-POP, 1
-    raster_band: 1
+    raster_band:
     ## A value in the image that represents 'no data', e.g. for GHSL-POP, -200
-    raster_nodata: -200
+    raster_nodata:
     ###########
-    ## Sample points intersecting grid cells with estimated population less than this will be excluded from analysis.  Depending on your population data resolution, you can use this to exclude areas with very low population due to the uncertainty of where anyone might live in that area, or if they do at all
-    pop_min_threshold: 1
-    ## Coordinate reference system metadata for population data (e.g. Mollweide, ESRI, 54009)
-    crs_name: Mollweide
-    crs_standard: ESRI
-    crs_srid: 54009
+    ## Sample points intersecting grid cells with estimated population less than this will be excluded from analysis.  Depending on your population data resolution, you can use this to exclude areas with very low population due to the uncertainty of where anyone might live in that area, or if they do at all.  For example, 1
+    pop_min_threshold:
+    ## Coordinate reference system metadata for population data.
+    ## For example, for GHSL-POP (Mollweide, ESRI, 54009), enter Mollweide
+    crs_name:
+    ## For example, for GHSL-POP (Mollweide, ESRI, 54009), enter ESRI
+    crs_standard:
+    ## For example, for GHSL-POP (Mollweide, ESRI, 54009), enter 54009
+    crs_srid:
     ## URL for where this data was sourced from
     source_url:
     ## metadata for citation
@@ -458,9 +463,10 @@ urban_region:
     ## Please note, this data has note been provided but can be retrieved. See the citation below.
     data_dir:
     ## licence, e.g. CC BY 4.0
-    licence: CC BY 4.0
+    licence:
     ## citation for this data, this has been pre-filled for the GHSL UCDB (2019), but change as required if using
-    citation: "Florczyk, A. et al. (2019): GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R2019A. European Commission, Joint Research Centre (JRC). https://data.jrc.ec.europa.eu/dataset/53473144-b88c-44bc-b4a3-4583ed1f547e"
+    ## For example, for GHSL UCDB (r2019a), enter: "Florczyk, A. et al. (2019): GHS Urban Centre Database 2015, multitemporal and multidimensional attributes, R2019A. European Commission, Joint Research Centre (JRC). https://data.jrc.ec.europa.eu/dataset/53473144-b88c-44bc-b4a3-4583ed1f547e"
+    citation:
     ## A list of additional covariates that can be optionally linked for cities included in the GHSL UCDB
     covariates:
         E_EC2E_T15:
@@ -482,19 +488,19 @@ urban_region:
         EL_AV_ALS:
             Units: metres above sea level
             Unit description: metres above sea level
-            Description: The average elevation for the urban centre
+            Description: The average elevation estimated within the spatial domain of the Urban Centre, and expressed in metres above sea level (MASL) (EORC & JAXA, 2017).
         E_KG_NM_LST:
             Units: List of climate classes
             Unit description: List of climate classes
-            Description: semi-colon separated list of names of Köppen-Geiger climate classes, intersecting with the spatial domain of the Urban Centre
+            Description: Semi-colon separated list of names of Köppen-Geiger climate classes, intersecting with the spatial domain of the Urban Centre (1986-2010) (Rubel et al., 2017).
         E_WR_T_14:
             Units: °C
             Unit description: Average temperature in Celsius degrees (°C)
-            Description: average temperature calculated from annual average estimates for time interval centred on the year 1990 (the interval spans from 1988 to 1991) within the spatial domain of the Urban Centre
+            Description: Average temperature calculated from annual average estimates for time interval centred on the year 2015 (the interval spans from 2012 to 2015) within the spatial domain of the Urban Centre, and expressed in Celsius degrees (°C) (Harris et al., 2014).
         E_WR_P_14:
             Units: mm
-            Unit description: the amount of rain per square meter in one hour (mm)
-            Description: average precipitations calculated from annual average estimates for time interval centred on the year 2015 (the interval spans from 2012 to 2015) within the spatial domain of the Urban Centre
+            Unit description: The amount of rain per square meter in one hour (mm)
+            Description: Average precipitations calculated from annual average estimates for time interval centred on the year 2015 (the interval spans from 2012 to 2015) within the spatial domain of the Urban Centre; and expressed in millimetres (mm), the amount of rain per square meter in one hour) (Harris et al., 2014).
 ## Query used to identify the specific urban region relevant for this region in the Urban Centres database
 ## GHS or other linkage of covariate data (GHS:variable='value', or path:variable='value' for a dataset with equivalently named fields defined in project parameters for air_pollution_covariates), e.g. GHS:UC_NM_MN=='Las Palmas de Gran Canaria' and CTR_MN_NM=='Spain'
 urban_query:
@@ -512,10 +518,10 @@ country_gdp:
 # custom_destinations:
     ## name of file relative to project data directory
     # file:
-    ## category plain name
-    # dest_name:
-    ## category full name
-    # dest_name_full:
+    ## destination identifier/name
+    # name_field:
+    ## destination detailed name or description
+    # description_field:
     ## y coordinate
     # lat:
     ## x coordinate
@@ -550,6 +556,14 @@ country_gdp:
         ## for Northern Hemisphere: 20230605
         ## for Southern Hemisphere: 20231205
         # end_date_mmdd:
+        ## If departure_times within the stop_times.txt file are missing for stops, analysis will be inaccurate unless these are filled in.
+        ## In such a case, processing of the GTFS feed will halt with a warning advising the user.
+        ## A user could: source alternate data, or fill/interpolate these values themselves.
+        ## A function has been provided to perform a linear interpolation according to the provided stop sequence start and end times within each trip_id.
+        ## This is an approximation based on the available information, and results may still differ from the actual service frequencies at these stops.
+        ## It is the user's responsibility to determine if this interpolation is appropriate for their use case.
+        ## To interpolate stop_times where these are missing, set the following parameter to 'true':
+        # interpolate_stop_times: false
         ## Optionally the default modes presented here can be modified
         # modes:
             # Tram       : {'route_types': [ 0],'agency_id': }
@@ -564,44 +578,82 @@ country_gdp:
             # Monorail   : {'route_types': [12],'agency_id': }
             #########
 ## Optional path to results of policy indicator review for inclusion in generated reports
-policy_review: process/data/policy_review/_policy_review_template_v0_TO-BE-UPDATED.xlsx
+## See https://healthysustainablecities.github.io/software/#Policy-checklist-data
+# e.g. for the example file: process/data/policy_review/Urban policy checklist_1000 Cities Challenge_version 1.0.1_LPGC_Sept23_AQ_JMG - draft example.xlsx
+policy_review:
 ## Optional additional notes for this region
 notes:
 #########
 ## Reporting configuration (uncomment to modify)
 # reporting:
+    ## PDF report templates (uncomment as requires)
+    ## Policy templates require completion and configuration of policy review checklist
+    # templates:
+        # - spatial
+        ## - policy_spatial
+        ## - policy
     ## Set 'publication_ready' to True once you have checked results, updated the summary and are ready to publish; before then, it should be False.
     # publication_ready: False
+    ## Select a basemap for the study region report - options are 'satellite' (recent cloudless composite image of Sentinel-2 satellite imagery to view the urban fabric, https://s2maps.eu by EOX IT Services GmbH), or 'osm' (a light coloured thematic map based on OpenStreetMap with labels), or 'streets' (a light coloured thematic map based on OpenStreetMap without labels, displaying streets),
+    # study_region_context_basemap: 'satellite'
     ## Once ready for publication it is recommended to register a DOI for your report, e.g. through figshare, zenodo or other repository
     # doi:
+    ## Feature inspiring healthy, sustainable urban design from your city, crediting the source
     # images:
-        ## Store images in the process/configuration/assets folder.
-        ## Update file name, description and credit as required.
-        # 1:
-            # file: Example image of a vibrant, walkable, urban neighbourhood - landscape.jpg
-            # description: Example image of a vibrant, walkable, urban neighbourhood with diverse people using active modes of transport and a tram (replace with a photograph, customised in region configuration)
-            # credit: Carl Higgs, Bing Image Creator, 2023
-        # 2:
+        # 1: # (.jpg, 2100px by 1000px; or 21:10 equivalent aspect ratio)
+            # file: "Example image of a vibrant, walkable, urban neighbourhood - landscape.jpg"
+            # description: "Example image of a vibrant, walkable, urban neighbourhood with diverse people using active modes of transport and a tram (replace with a photograph, customised in region configuration)"
+            # credit: "Feature inspiring healthy, sustainable urban design from your city, crediting the source, e.g.: Carl Higgs, Bing Image Creator, 2023"
+        # 2: (.jpg, 2100px by 1000px; or equivalent 21:10 aspect ratio)
+            # file: "Example image 2-Landscape.jpg"
+            # description: "Example image of a vibrant, walkable, urban area (replace with a photograph or your own image, customised in region configuration)"
+            # credit: "Feature inspiring healthy, sustainable urban design from your city, crediting the source, e.g.: Eugen Resendiz, Bing Image Creator, 2023"
+        # 3: # (.jpg, 1000px by 1000px; or equivalent 1:1 aspect ratio)
             # file: Example image of a vibrant, walkable, urban neighbourhood - square.jpg
             # description: Example image of a vibrant, walkable, urban neighbourhood with diverse people using active modes of transport and a tram (replace with a photograph, customised in region configuration)
-            # credit: Carl Higgs, Bing Image Creator, 2023
+            # credit: "Use your image & credit: e.g. Carl Higgs, Bing Image Creator, 2023"
+        # 4: # (.jpg, 1000px by 1000px; or equivalent 1:1 aspect ratio)
+            # file: "Example image of climate resilient lively city watercolor-Square.jpg"
+            # description: "Example image of a climate-resilient, lively city (replace with an image for your city, customised in region configuration)"
+            # credit: "Feature inspiring healthy, sustainable urban design from your city, crediting the source, e.g.: Eugen Resendiz, Bing Image Creator, 2023"
     ## Languages configuration
     # languages:
         ## Add a list of languages as required.  Languages listed should correspond to columns in the _report_configuration.xlsx file 'languages' worksheet.  New languages can be added, although some may require additional fonts.  Some languages may not be supported (eg. complex scripts like Tamil and Thai may not be supported by the report template and require manual edits).
         # English:
-            ## City name in English, for example: Las Palmas
+            # ## City name in English, for example: Las Palmas
             # name:
-            ## Country name in English, for example: Spain
+            # ## Country name in English, for example: Spain
             # country:
-            ## After reviewing the results, update this summary text to contextualise your findings, and relate to external text and documents (e.g. using website hyperlinks).  This text will be used in the report summary.
-            # summary:
+            # ## After reviewing the results, update this summary text to contextualise your findings, and relate to external text and documents (e.g. using website hyperlinks).  This text will be used in the report summary.
+            # summary: |
+                # After reviewing results for your city, provide a contextualised summary by modifying the "summary" text for each configured language within the region configuration file.
+            # ## Contextual summary for study region spatial report.  Users may choose to translate these entries (following the hyphen) for languages configured for their city.  Remember, if you put a colon (":") in, put quotes around the text to make it explicitly understood as text.
+            # context:
+                # # A brief summary of region characteristics
+                # - City context:
+                    # # Contextual information about your study region.   Please briefly summarise the city location, history and topography, as relevant.
+                    # - summary: Edit the region configuration file to provide background context for your study region. Please briefly summarise the location, history and topography, as relevant.
+                    # - source: Add any citations used here.
+                # - Levels of government:
+                # # For example, for this report, policies from [insert levels of government from policy checklist,  e.g. national, metropolitan, local] levels of government were analysed.Completed policy checklist values will be added, but prose may be customised here.
+                    # - summary:
+                    # - source: Add any citations used here.
+                # - Demographics and health equity:
+                    # # For example, highlight socio-economic demographic characteristics and key health challenges and inequities present in this urban area.
+                    # - summary:
+                    # - source: Add any citations used here.
+                # - Environmental disaster context:
+                    # # For example, environmental hazards likely to be experience by the urban area over the next 5-10 years, may include [insert those listed as ‘yes’ in the policy checklist].  Completed policy checklist values will be added, but prose may be customised here.
+                    # - summary:
+                    # - source: Add any citations used here.
     ## Optionally, exceptions to the template can be specified here, this can be useful for additional translation customisation without modifying the report_configuration.xlsx file.  These phrases can incorporate translated phrases defined in report configuration, by enclosing these in curly braces, e.g. like {this}, if 'this' has been defined as a phrase in the relevant language.  See the example region for a demonstration of how this can be used.  Sections from the example can be pasted here and modified as required, or the below example can be uncommented.
-    ## exceptions:
-        ## "English":
-            ## 'local_collaborators_names': 'Add your names here, or modify authors in config.yml and remove this line'
-        ## "Another configured language":
-            ## 'local_collaborators_names': 'Agregue sus nombres aquí, o modifique los autores en config.yml y elimine esta línea'
-            ## 'citation_doi': '{local_collaborators_names}. 2022. {title_city} — {title_series_line1} {title_series_line2} ({city}, {country} — Healthy and Sustainable City Indicators Report. Traducción al español (España): {translation_names}). {city_doi}'
+    # exceptions:
+        # "English":
+            # 'author_names': 'Add your names here, or modify authors in config.yml and remove this line'
+            # 'policy_jurisdiction': 'Customise the entry for policy jurisdiction to override the record found in a completed policy review checklist.'
+        # "Another configured language":
+            # 'author_names': 'Agregue sus nombres aquí, o modifique los autores en config.yml y elimine esta línea'
+            # 'citation_doi': '{author_names}. 2022. {title_city} — {title_series_line1} {disclaimer} ({city}, {country} — Healthy and Sustainable City Indicators Report: Comparisons with 25 cities internationally. {language} {translation}: {translation_names}). {city_doi}'
 #########
 ```
 </details>
@@ -617,7 +669,7 @@ notes:
 ## Example configuration for Las Palmas de Gran Canaria, Spain
 ## using Study region configuration template v4.2.2 (27 June 2023)
 
-## This configuration file uses the YAML format (https://yaml.org/) to describe the data sources, parameters and metadata used to analyse and generate urban indicator resources using the Global Healthy and Sustainable City Indicators software (https://global-healthy-liveable-cities.github.io/).
+## This configuration file uses the YAML format (https://yaml.org/) to describe the data sources, parameters and metadata used to analyse and generate urban indicator resources using the Global Healthy and Sustainable City Indicators software (https://healthysustainablecities.github.io/).
 
 ## Text begining with a double hash symbol ("##") is are comments (used to provide descriptions of how to complete the item immediately below).  Text beginning with a single has symbol ("#") are commented out section of code that may optionally be uncommented as per the provided instructions.
 
@@ -995,7 +1047,7 @@ The kinds of data that can be configured for usage are summarised in the below t
 |--------------|--------------------|----------------|
 |Required      | OpenStreetMap      | an OpenStreetMap .pbf file with coverage of the region (and time) of interest; this could be an [historical planet file](https://planet.openstreetmap.org/pbf/), or a [region-specific excerpt](https://download.geofabrik.de/) |
 |Required      | population_grids   | Population distribution raster grid or vector data with coverage of urban region of interest. [GHS population grid (R2023)](https://ghsl.jrc.ec.europa.eu/download.php?ds=pop) is recommended (for example, the 2020 Molleweide 100m grid tiles corresponding to your area of interest, with these saved and extracted to a folder like  `process/data/GHS/R2023A/GHS_POP_E2020_GLOBE_R2023A_54009_100_V1_0`, which may be specified in `process/configuration/datasets.yml`.  *Take care to select the correct Epoch for your analysis before downloading!* |
-|Conditional   | region_boundaries  | Vector boundary for identifying study region (e.g. geopackage, geojson or shp).  If a geopackage is used, a specific layer can optionally be specified and queried, as per [this example](https://github.com/global-healthy-liveable-cities/global-indicators/blob/d89122996a6a10be512d16d01b8f1a0398ce04a3/process/configuration/regions/additional%20example%20regions/BE_Ghent_2022.yml#L12) |
+|Conditional   | region_boundaries  | Vector boundary for identifying study region (e.g. geopackage, geojson or shp).  If a geopackage is used, a specific layer can optionally be specified and queried, as per [this example](https://github.com/healthysustainablecities/global-indicators/blob/d89122996a6a10be512d16d01b8f1a0398ce04a3/process/configuration/regions/additional%20example%20regions/BE_Ghent_2022.yml#L12) |
 |Conditional   | urban_regions      | [Global Human Settlements Layer](https://ghsl.jrc.ec.europa.eu/download.php) Urban Centres database and/or administrative boundary for urban region of interest |
 |Optional      | policy_review      | Summarising results of a policy review analysis |
 |Optional      | transit_feeds      | Collections of zipped GTFS feeds to represent public transport service frequency |
@@ -1184,7 +1236,7 @@ gtfs_feeds:
         end_date_mmdd: 20230605
 ```
 
-Some GTFS feeds don't adhere to the reference standard and some customisation is possible to accomodate mapping of alternate `route_types` and `agency_id` values.  The defaults for these fields can be seen in the datasets.yml file [here](https://github.com/global-healthy-liveable-cities/global-indicators/blob/d89122996a6a10be512d16d01b8f1a0398ce04a3/process/configuration/templates/datasets.yml#L245-L256). These can be over-ridden for each mode, for example, for the below feed which describes service schedules for a [semi-Metro](https://en.wikipedia.org/wiki/M%C3%A1laga_Metro) a route type of 400 was used.  This was mapped as a value for the 'Tram' mode to allow analysis to progress:
+Some GTFS feeds don't adhere to the reference standard and some customisation is possible to accomodate mapping of alternate `route_types` and `agency_id` values.  The defaults for these fields can be seen in the datasets.yml file [here](https://github.com/healthysustainablecities/global-indicators/blob/d89122996a6a10be512d16d01b8f1a0398ce04a3/process/configuration/templates/datasets.yml#L245-L256). These can be over-ridden for each mode, for example, for the below feed which describes service schedules for a [semi-Metro](https://en.wikipedia.org/wiki/M%C3%A1laga_Metro) a route type of 400 was used.  This was mapped as a value for the 'Tram' mode to allow analysis to progress:
 
 ```
 gtfs_feeds:
@@ -1235,21 +1287,23 @@ The following provides an indicative list of the contents of this folder (italic
 
 # Frequently Asked Questions
 
+From June 2024, we are migrating our Frequently Asked Questions and the directions in this website to our [GHSCI Wiki](https://github.com/healthysustainablecities/global-indicators/wiki) where we will maintain an updated list of tips for using the software to analyse and report on urban indicators.
+
 ## What if I get stuck?
 
 ### Check the log file
-Sometimes things go wrong, and you might get a message advising you of this.  For example, an entry in the region configuration YAML might be missing a space after a colon character (for example, `:true` instead of `: true`) or a path to data may have a typographical error.  The nature of warnings will depend on how you are running the software.  However, if your configuration file has successfully been loaded and analysis has commenced, the most informative place to look is the text file log that can be found in the [data output](https://global-healthy-liveable-cities.github.io/software/#Data-output-folder) folder for your study region.  Open this file in a text editor and scroll to the end to find the point where things may have gone awry.
+Sometimes things go wrong, and you might get a message advising you of this.  For example, an entry in the region configuration YAML might be missing a space after a colon character (for example, `:true` instead of `: true`) or a path to data may have a typographical error.  The nature of warnings will depend on how you are running the software.  However, if your configuration file has successfully been loaded and analysis has commenced, the most informative place to look is the text file log that can be found in the [data output](https://healthysustainablecities.github.io/software/#Data-output-folder) folder for your study region.  Open this file in a text editor and scroll to the end to find the point where things may have gone awry.
 
 ### Check configurations
-If the data output folder for your study region hasn't been created or doesn't contain an analysis text log after attempting to run the [analysis](https://global-healthy-liveable-cities.github.io/software/#Analysis) workflow, it is likely that an error in your configuration file has prevented it being successfully loaded.  Check to see if an error was displayed, e.g. advising that configured data files could not be located at the paths specified.  Consider comparing your study region configuration with the provided example and see what might differ.  A small error could stop the file being successfully loaded, but in many cases there are clues given as to where to find and correct this.
+If the data output folder for your study region hasn't been created or doesn't contain an analysis text log after attempting to run the [analysis](https://healthysustainablecities.github.io/software/#Analysis) workflow, it is likely that an error in your configuration file has prevented it being successfully loaded.  Check to see if an error was displayed, e.g. advising that configured data files could not be located at the paths specified.  Consider comparing your study region configuration with the provided example and see what might differ.  A small error could stop the file being successfully loaded, but in many cases there are clues given as to where to find and correct this.
 
-Configuration files are easier to read and edit in a text editor that provides [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting).  For example, you can view and edit the YAML files using the provided [Jupyter Lab](https://global-healthy-liveable-cities.github.io/software/#Jupyter-Lab) interface in your web browser.  Alternatively, there are software options such as [VS Code](https://code.visualstudio.com/) or [Notepad++](https://notepad-plus-plus.org/).
+Configuration files are easier to read and edit in a text editor that provides [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting).  For example, you can view and edit the YAML files using the provided [Jupyter Lab](https://healthysustainablecities.github.io/software/#Jupyter-Lab) interface in your web browser.  Alternatively, there are software options such as [VS Code](https://code.visualstudio.com/) or [Notepad++](https://notepad-plus-plus.org/).
 
 ### Check for issues
-Other users or the developers themselves may have come across the issue you are experiencing and posted a question or resolution for this on our software code repository.  You can browse, query or add a comment to open or closed issues [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues).
+Other users or the developers themselves may have come across the issue you are experiencing and posted a question or resolution for this on our software code repository.  You can browse, query or add a comment to open or closed issues [here](https://github.com/healthysustainablecities/global-indicators/issues).
 
 ### Report a bug, request a feature, or contribute to the project
-Perhaps you have come across a use case or data format that we haven't considered or accounted for.  You can report a bug or make a feature request online [here](https://github.com/global-healthy-liveable-cities/global-indicators/issues/new/choose).   To ensure our community can help you, try to provide as much contextual detail as possible.  This can include copying text from your log file and configuration file(s) as appropriate; often the solutions will be found by understanding what is contained in these documents.  
+Perhaps you have come across a use case or data format that we haven't considered or accounted for.  You can report a bug or make a feature request online [here](https://github.com/healthysustainablecities/global-indicators/issues/new/choose).   To ensure our community can help you, try to provide as much contextual detail as possible.  This can include copying text from your log file and configuration file(s) as appropriate; often the solutions will be found by understanding what is contained in these documents.  
 
 Contributions are welcome! Some advice on doing this is found [here](https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution).
 
