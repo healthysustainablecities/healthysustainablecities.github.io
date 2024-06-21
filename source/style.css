@@ -741,7 +741,7 @@ body {
 #header-post #menu-icon:hover {
   color: #2bbc8a;
 }
-#header-post #top-icon-tablet {
+/* #header-post #top-icon-tablet {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
@@ -750,7 +750,7 @@ body {
 }
 #header-post #top-icon-tablet:hover {
   color: #2bbc8a;
-}
+} */
 #header-post .active {
   color: #2bbc8a;
 }
@@ -862,11 +862,11 @@ body {
 @media screen and (max-width: 1199px) {
 
 }
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   #header-post #top-icon-tablet {
     display: none !important;
   }
-}
+} */
 @media screen and (min-width: 1199px) {
   #header-post #actions {
     width: auto;
